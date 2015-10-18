@@ -16,11 +16,10 @@ static uint64_t keccak_round_constants[28] = {
         0x0000000000000000LL, 0x0000000000000000LL, 0x0000000000000000LL, 0x000000000000000000  ///Calculate additional RC values
 };
 
-static void keccak_transformation_theta(void * data, size_t size, size_t block_size){
+static void keccak_transformation_pi(void * data, size_t size, size_t block_size){
   
 }
-
-static void keccak_transformation_pi(void * data, size_t size, size_t block_size){
+static void keccak_transformation_theta(void * data, Keccak_lane_size lane_size){
   
 }
 
@@ -38,61 +37,10 @@ void keccak_f (Sponge_t *Sponge){
   }
 }
 
-/* Initializing a sha3 context for given number of output bits */
-static void rhash_keccak_init(sha3_ctx *ctx, unsigned bits)
-{
-	/* NB: The Keccak capacity parameter = bits * 2 */
-	unsigned rate = 1600 - bits * 2;
-
-	memset(ctx, 0, sizeof(sha3_ctx));
-	ctx->block_size = rate / 8;
-	assert(rate <= 1600 && (rate % 64) == 0);
-}
-
-/**
- * Initialize context before calculating hash.
- *
- * @param ctx context to initialize
- */
-void rhash_sha3_224_init(sha3_ctx *ctx)
-{
-	rhash_keccak_init(ctx, 224);
-}
-
-/**
- * Initialize context before calculating hash.
- *
- * @param ctx context to initialize
- */
-void rhash_sha3_256_init(sha3_ctx *ctx)
-{
-	rhash_keccak_init(ctx, 256);
-}
-
-/**
- * Initialize context before calculating hash.
- *
- * @param ctx context to initialize
- */
-void rhash_sha3_384_init(sha3_ctx *ctx)
-{
-	rhash_keccak_init(ctx, 384);
-}
-
-/**
- * Initialize context before calculating hash.
- *
- * @param ctx context to initialize
- */
-void rhash_sha3_512_init(sha3_ctx *ctx)
-{
-	rhash_keccak_init(ctx, 512);
-}
-
-/* Keccak theta() transformation */
-static void keccak_theta(uint64_t *A)
-{
+static void keccak_theta(void *state, Keccak_lane_size lane_size){  
 	unsigned int x;
+        uint64_t *A;
+        
 	uint64_t C[5], D[5];
 
 	for (x = 0; x < 5; x++) {
@@ -114,10 +62,104 @@ static void keccak_theta(uint64_t *A)
 }
 
 /* Keccak pi() transformation */
-static void keccak_pi(uint64_t *A)
-{
+static void keccak_pi8(void *state){
+	uint8_t A1;
+        uint8_t *A = (uint8_t *) state;
+        //1-6-9-22-14-20-2-12-13-19-23-15-4-24-21-8-16-5-3-18-17-11-7-10-1*
+	A1    = A[ 1];
+	A[ 1] = A[ 6];
+	A[ 6] = A[ 9];
+	A[ 9] = A[22];
+	A[22] = A[14];
+	A[14] = A[20];
+	A[20] = A[ 2];
+	A[ 2] = A[12];
+	A[12] = A[13];
+	A[13] = A[19];
+	A[19] = A[23];
+	A[23] = A[15];
+	A[15] = A[ 4];
+	A[ 4] = A[24];
+	A[24] = A[21];
+	A[21] = A[ 8];
+	A[ 8] = A[16];
+	A[16] = A[ 5];
+	A[ 5] = A[ 3];
+	A[ 3] = A[18];
+	A[18] = A[17];
+	A[17] = A[11];
+	A[11] = A[ 7];
+	A[ 7] = A[10];
+	A[10] = A1;
+	/* note: A[ 0] is left as is */
+}
+static void keccak_pi16(void *state){
+	uint16_t A1;
+        uint16_t *A = (uint16_t *) state;
+        //1-6-9-22-14-20-2-12-13-19-23-15-4-24-21-8-16-5-3-18-17-11-7-10-1*
+	A1    = A[ 1];
+	A[ 1] = A[ 6];
+	A[ 6] = A[ 9];
+	A[ 9] = A[22];
+	A[22] = A[14];
+	A[14] = A[20];
+	A[20] = A[ 2];
+	A[ 2] = A[12];
+	A[12] = A[13];
+	A[13] = A[19];
+	A[19] = A[23];
+	A[23] = A[15];
+	A[15] = A[ 4];
+	A[ 4] = A[24];
+	A[24] = A[21];
+	A[21] = A[ 8];
+	A[ 8] = A[16];
+	A[16] = A[ 5];
+	A[ 5] = A[ 3];
+	A[ 3] = A[18];
+	A[18] = A[17];
+	A[17] = A[11];
+	A[11] = A[ 7];
+	A[ 7] = A[10];
+	A[10] = A1;
+	/* note: A[ 0] is left as is */
+}
+static void keccak_pi32(void *state){
+	uint32_t A1;
+        uint32_t *A = (uint32_t *) state;
+        //1-6-9-22-14-20-2-12-13-19-23-15-4-24-21-8-16-5-3-18-17-11-7-10-1*
+	A1    = A[ 1];
+	A[ 1] = A[ 6];
+	A[ 6] = A[ 9];
+	A[ 9] = A[22];
+	A[22] = A[14];
+	A[14] = A[20];
+	A[20] = A[ 2];
+	A[ 2] = A[12];
+	A[12] = A[13];
+	A[13] = A[19];
+	A[19] = A[23];
+	A[23] = A[15];
+	A[15] = A[ 4];
+	A[ 4] = A[24];
+	A[24] = A[21];
+	A[21] = A[ 8];
+	A[ 8] = A[16];
+	A[16] = A[ 5];
+	A[ 5] = A[ 3];
+	A[ 3] = A[18];
+	A[18] = A[17];
+	A[17] = A[11];
+	A[11] = A[ 7];
+	A[ 7] = A[10];
+	A[10] = A1;
+	/* note: A[ 0] is left as is */
+}
+static void keccak_pi64(void *state){
 	uint64_t A1;
-	A1 = A[1];
+        uint64_t *A = (uint64_t *) state;
+        //1-6-9-22-14-20-2-12-13-19-23-15-4-24-21-8-16-5-3-18-17-11-7-10-1*
+	A1    = A[ 1];
 	A[ 1] = A[ 6];
 	A[ 6] = A[ 9];
 	A[ 9] = A[22];
@@ -145,6 +187,8 @@ static void keccak_pi(uint64_t *A)
 	/* note: A[ 0] is left as is */
 }
 
+
+
 /* Keccak chi() transformation */
 static void keccak_chi(uint64_t *A)
 {
@@ -164,7 +208,7 @@ static void rhash_sha3_permutation(uint64_t *state)
 	int round;
 	for (round = 0; round < NumberOfRounds; round++)
 	{
-		keccak_theta(state);
+		//keccak_theta(state);
 
 		/* apply Keccak rho() transformation */
 		state[ 1] = ROTL64(state[ 1],  1);
@@ -263,42 +307,4 @@ static void rhash_sha3_process_block(uint64_t hash[25], const uint64_t *block, s
  * @param msg message chunk
  * @param size length of the message chunk
  */
-void rhash_sha3_update(sha3_ctx *ctx, const unsigned char *msg, size_t size)
-{
-	size_t index = (size_t)ctx->rest;
-	size_t block_size = (size_t)ctx->block_size;
-
-	if (ctx->rest & SHA3_FINALIZED) return; /* too late for additional input */
-	ctx->rest = (unsigned)((ctx->rest + size) % block_size);
-
-	/* fill partial block */
-	if (index) {
-		size_t left = block_size - index;
-		memcpy((char*)ctx->message + index, msg, (size < left ? size : left));
-		if (size < left) return;
-
-		/* process partial block */
-		rhash_sha3_process_block(ctx->hash, ctx->message, block_size);
-		msg  += left;
-		size -= left;
-	}
-	while (size >= block_size) {
-		uint64_t* aligned_message_block;
-		if (IS_ALIGNED_64(msg)) {
-			/* the most common case is processing of an already aligned message
-			without copying it */
-			aligned_message_block = (uint64_t*)msg;
-		} else {
-			memcpy(ctx->message, msg, block_size);
-			aligned_message_block = ctx->message;
-		}
-
-		rhash_sha3_process_block(ctx->hash, aligned_message_block, block_size);
-		msg  += block_size;
-		size -= block_size;
-	}
-	if (size) {
-		memcpy(ctx->message, msg, size); /* save leftovers */
-	}
-}
 #endif

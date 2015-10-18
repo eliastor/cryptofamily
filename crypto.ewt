@@ -2113,6 +2113,9 @@
     <name>$PROJ_DIR$\keccak.h</name>
   </file>
   <file>
+    <name>$PROJ_DIR$\littlemorelongint.h</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\main.c</name>
   </file>
   <file>
@@ -2120,6 +2123,9 @@
   </file>
   <file>
     <name>$PROJ_DIR$\sponge.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\stretchint.h</name>
   </file>
 </project>
 

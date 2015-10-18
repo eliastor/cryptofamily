@@ -30,10 +30,12 @@
 typedef struct Spong_t Sponge_t;
 
 typedef void (*Sponge_transformation_callback_t) (Sponge_t *Sponge);
+typedef void (*Sponge_padding_callback_t) (Sponge_t *Sponge);
 
 struct Spong_t {
    void *state;                                                                 //state of the sponge
-   Sponge_transformation_callback_t transformation_callback;                     //callback fo sponge transformation function.
+   Sponge_transformation_callback_t transformation_callback;                     //callback for sponge transformation function.
+   Sponge_padding_callback_t padding_callback;                                  //callback for sponge padding function
    uint16_t size;                                                                //size of state
    uint16_t r;                                                                   //bitrate
 };

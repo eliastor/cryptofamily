@@ -15,6 +15,9 @@ int Sponge_init(Sponge_t *Sponge){
   if(Sponge->transformation_callback == (Sponge_transformation_callback_t) NULL){
     return Sponge_code_null_callback;
   }
+  if(Sponge->padding_callback == (Sponge_padding_callback_t) NULL){
+    return Sponge_code_null_callback;
+  }
 #ifndef __ALLOC_ON
   //does we need to allocate automatically
 #else

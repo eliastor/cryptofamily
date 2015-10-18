@@ -2,13 +2,15 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3433178625</fileChecksum>
+  <fileChecksum>479690837</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
       <file>$PROJ_DIR$\keccak.c</file>
       <file>$PROJ_DIR$\keccak.h</file>
       <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtools.__cstat.et</file>
+      <file>$PROJ_DIR$\sponge\sponge.h</file>
       <file>$PROJ_DIR$\macros\module.h</file>
       <file>$PROJ_DIR$\macros\concat.h</file>
       <file>$PROJ_DIR$\helper\memtools.c</file>
@@ -63,31 +65,33 @@
       <file>$PROJ_DIR$\Debug\Obj\keccak.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Obj\primes.o</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\littlemorelongint.h</file>
+      <file>$PROJ_DIR$\stretchint.h</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\keccak.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 17</file>
+          <file> 19</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 43 39</file>
+          <file> 45 41</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 54</file>
+          <file> 56</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 50 25 52 8 14 28 3 34 24 49 37 12 1 16 10 26 31 4 44 6 40</file>
+          <file> 54 33 30 27 12 36 39 28 10 8 14 1 18 26 51 16 52 46 6 5 42</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 1 24 25 52 28 49 26 31 8 14 37 50 10 4 44 3 6 40 16 34 12</file>
+          <file> 1 26 27 54 30 51 28 33 10 16 39 52 12 6 46 5 8 42 18 36 14</file>
         </tool>
       </inputs>
     </file>
@@ -96,25 +100,25 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 56</file>
+          <file> 58</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 35 13</file>
+          <file> 37 15</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 29</file>
+          <file> 31</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 37 52 8 44 28 26 50 49 31 25 24 34 10 14 6 12 4 3 16 40</file>
+          <file> 39 27 54 46 16 10 30 26 36 52 12 51 28 33 8 14 6 5 18 42</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 24 25 52 28 49 26 31 8 14 37 50 10 4 44 3 6 40 16 34 12</file>
+          <file> 26 27 54 30 51 28 33 10 16 39 52 12 6 46 5 8 42 18 36 14</file>
         </tool>
       </inputs>
     </file>
@@ -123,7 +127,7 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 33</file>
+          <file> 35</file>
         </tool>
       </outputs>
     </file>
@@ -132,21 +136,25 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 48</file>
+          <file> 50</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 46 38</file>
+          <file> 48 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 3</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 28 3 26 37 25 8 4 34 49 31 50 24 52 44 16 14 12 7</file>
+          <file> 16 5 39 27 30 6 36 10 52 26 54 46 18 51 28 33 14 9</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 7 24 25 52 28 49 26 31 8 14 37 50 4 44 3 16 34 12</file>
+          <file> 9 26 27 54 30 51 28 33 10 16 39 52 6 46 5 18 36 14</file>
         </tool>
       </inputs>
     </file>
@@ -155,25 +163,25 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 53</file>
+          <file> 55</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 45 15</file>
+          <file> 47 17</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 47</file>
+          <file> 49</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 52 37 25 14 28 40 24 49 8 50 26 31</file>
+          <file> 51 54 30 39 10 16 27 42 26 52 28 33</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 40 24 25 52 28 49 26 31 8 14 37 50</file>
+          <file> 42 26 27 54 30 51 28 33 10 16 39 52</file>
         </tool>
       </inputs>
     </file>
@@ -182,7 +190,7 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 22 15 39 13 38 55 51 11 21 27 20</file>
+          <file> 24 17 41 15 40 57 53 13 23 29 22</file>
         </tool>
       </inputs>
     </file>
@@ -191,25 +199,25 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 42</file>
+          <file> 44</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 9 51</file>
+          <file> 11 53</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 23</file>
+          <file> 25</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 4 25 26 24 28 16 52 37 3 31 50 40 44 6 34 49 8 14 12 10</file>
+          <file> 39 10 27 14 5 16 30 6 18 51 52 26 54 46 8 36 28 33 42 12</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 10 24 25 52 28 49 26 31 8 14 37 50 4 44 3 6 40 16 34 12</file>
+          <file> 12 26 27 54 30 51 28 33 10 16 39 52 6 46 5 8 42 18 36 14</file>
         </tool>
       </inputs>
     </file>
@@ -218,21 +226,18 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 19</file>
+          <file> 21</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 18 55</file>
+          <file> 20 57</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 30</file>
+          <file> 32</file>
         </tool>
       </outputs>
     </file>
-    <forcedrebuild>
-      <name>[REBUILD_ALL]</name>
-    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>

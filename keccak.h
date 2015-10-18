@@ -1,5 +1,5 @@
 #ifndef incKeccak_h
-  #define incKeccak_h
+#define incKeccak_h
   #include <inttypes.h>
   #include <stdlib.h>
   #include <stdint.h>
@@ -49,24 +49,18 @@
 #define IS_ALIGNED_32(p) (0 == (3 & ((const char*)(p) - (const char*)0)))
 #define IS_ALIGNED_64(p) (0 == (7 & ((const char*)(p) - (const char*)0)))
 
-typedef struct sha3_ctx
-{
-	/* 1600 bits algorithm hashing state */
-	uint64_t hash[sha3_max_permutation_size];
-	/* 1536-bit buffer for leftovers */
-	uint64_t message[sha3_max_rate_in_qwords];
-	/* count of bytes in the message[] buffer */
-	unsigned rest;
-	/* size of a message block processed at once */
-	unsigned block_size;
-} sha3_ctx;
-
-
 //note: we allow to use l in range 3 to 8 due to convinienvce of datatypes usage
 #define Keccak_l_min 3
 #define Keccak_l_max 8
 
-
+typedef enum{
+  Keccak_lane_size_8,
+  Keccak_lane_size_16,
+  Keccak_lane_size_32,
+  Keccak_lane_size_64,
+  Keccak_lane_size_128,
+  Keccak_lane_size_256
+} Keccak_lane_size;
 
 
 /*Keccak_b_values - values of b parameters in dependence of l{0,..8}*/
@@ -76,6 +70,8 @@ static const size_t Keccak_w_values[Keccak_l_max+1] = {1,2,4,8,16,32,64,128,256}
 
 //container size in bytes. note that we define only l >=3
 static const size_t Keccak_container_calues[Keccak_l_max+1] = {0,0,0,1,2,4,8,8,8};
+
+static void keccak_transformation_theta(void * data, Keccak_lane_size);
 
 
 
