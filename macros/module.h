@@ -1,0 +1,1 @@
+#define RETURN_CODE(module,code) ((int) ( ( ((uint16_t) code) <<  ((sizeof(int)*8)-16)) | (uint16_t) module) )
