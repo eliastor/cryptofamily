@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\projects\cortex m3 crypto\settings\crypto.Debug.general.xcl" --backend -f "C:\projects\cortex m3 crypto\settings\crypto.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\projects\cryptofamily\settings\crypto.Debug.general.xcl" --backend -f "C:\projects\cryptofamily\settings\crypto.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\projects\cortex m3 crypto\settings\crypto.Debug.general.xcl" "--debug_file=%1" --backend -f "C:\projects\cortex m3 crypto\settings\crypto.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\projects\cryptofamily\settings\crypto.Debug.general.xcl" "--debug_file=%1" --backend -f "C:\projects\cryptofamily\settings\crypto.Debug.driver.xcl" 
 
 @echo off 
 :end
