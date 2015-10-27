@@ -4,6 +4,7 @@
   #include <stdlib.h>
   #include <stdint.h>
 #include "sponge.h"
+#include "littlemorelongint.h"
   
   #define Keccak_module 0xC001
 
@@ -49,6 +50,9 @@
 #define IS_ALIGNED_32(p) (0 == (3 & ((const char*)(p) - (const char*)0)))
 #define IS_ALIGNED_64(p) (0 == (7 & ((const char*)(p) - (const char*)0)))
 
+
+//by the way i think that it's better to realize algorythm gor l=6
+
 //note: we allow to use l in range 3 to 8 due to convinienvce of datatypes usage
 #define Keccak_l_min 3
 #define Keccak_l_max 8
@@ -72,7 +76,7 @@ static const size_t Keccak_w_values[Keccak_l_max+1] = {1,2,4,8,16,32,64,128,256}
 static const size_t Keccak_container_calues[Keccak_l_max+1] = {0,0,0,1,2,4,8,8,8};
 
 static void keccak_transformation_theta(void * data, Keccak_lane_size);
-
+static void keccak_round(void *Sponge, size_t l, const uint64_t RC);
 
 
 #define Keccak_code_l_out_of_range RETURN_CODE(Keccak_module, -20);

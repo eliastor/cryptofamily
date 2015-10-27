@@ -3,6 +3,11 @@
 #include <stdint.h>
 #include "sponge.h"
   uint64_t buf[128];
+
+void T(Sponge_t *Sponge){
+  
+}
+
 int main()
 {
 
@@ -22,6 +27,10 @@ int main()
   
   Sponge_t Sponge = Sponge_null;
   Sponge.state = (void *) &buf;
+  Sponge.padding_callback = (Sponge_padding_callback_t) Sponge_pad_data_null;
+  Sponge.transformation_callback = (Sponge_transformation_callback_t) T;
+  Sponge.size = 1600;
+  Sponge.r = 64;
   
   Sponge_init(&Sponge);
   

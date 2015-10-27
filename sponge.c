@@ -2,16 +2,27 @@
 #include "sponge.h"
 #define incSponge
 
+
+/// rewrite initialization and limitations. 
 int Sponge_init(Sponge_t *Sponge){
   if((Sponge->size > Sponge_size_max) || (Sponge->size < Sponge_size_min)){ //maybe it's better to use assert, but we haven't stderr
     return Sponge_code_size_out_of_range;
   }
+  if((Sponge->size % 8) !=0){
+    return Sponge_code_invalid_size;
+  }
   if(Sponge->state == NULL){
     return Sponge_code_null_state;
   }
-  if(((Sponge->size / Sponge->r) == 0) || ((Sponge->size % Sponge->r) != 0)){
+  
+  if((Sponge->size < Sponge->r)|((Sponge->size % 8)!= 0)){
     return Sponge_code_invalid_r;
   }
+  
+  /*if(((Sponge->size / Sponge->r) == 0) || ((Sponge->size % Sponge->r) != 0)){
+    return Sponge_code_invalid_r;
+  }*/
+  
   if(Sponge->transformation_callback == (Sponge_transformation_callback_t) NULL){
     return Sponge_code_null_callback;
   }

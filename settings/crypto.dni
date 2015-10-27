@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-858955294
+Checksum=-1614961188
 [CodeCoverage]
 Enabled=_ 0
 [Exceptions]
@@ -22,9 +22,6 @@ MixedMode=1
 [SfrWindow]
 Show=1 1
 Sort=4 0
-[struct_types]
-Fmt0=Sponge_t-r_size	4	0
-Fmt1=Sponge_t-state_size	4	0
 [array_types]
 Fmt0=uint64_t[128]	4	0
 [watch_formats]
@@ -64,9 +61,10 @@ mode=0
 [Breakpoints2]
 Bp0=_ 0 "STD_CODE2" "{$PROJ_DIR$\keccak.c}.6.1" 0 0 1 "" 0 ""
 Bp1=_ 0 "STD_CODE2" "{$PROJ_DIR$\sponge.h}.9.20" 0 0 1 "" 0 ""
-Bp2=_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.26.1" 0 0 1 "" 0 ""
-Bp3=_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.23.12" 0 0 1 "" 0 ""
-Count=4
+Bp2=_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.35.3" 0 0 1 "" 0 ""
+Bp3=_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.28.12" 0 0 1 "" 0 ""
+Bp4=_ 1 "STD_CODE2" "{$PROJ_DIR$\sponge.c}.22.5" 0 0 1 "" 0 ""
+Count=5
 [Interrupts]
 Enabled=1
 [MemConfig]

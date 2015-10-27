@@ -12,7 +12,7 @@
       <name>General</name>
       <archiveVersion>3</archiveVersion>
       <data>
-        <version>22</version>
+        <version>24</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -26,11 +26,6 @@
         <option>
           <name>ListPath</name>
           <state>Debug\List</state>
-        </option>
-        <option>
-          <name>Variant</name>
-          <version>21</version>
-          <state>0</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -59,11 +54,6 @@
           <state>0</state>
         </option>
         <option>
-          <name>FPU</name>
-          <version>5</version>
-          <state>0</state>
-        </option>
-        <option>
           <name>OGCoreOrChip</name>
           <state>0</state>
         </option>
@@ -87,7 +77,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>7.40.2.8567</state>
+          <state>7.40.5.9734</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -99,7 +89,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state></state>
+          <state>Default	None</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -136,13 +126,8 @@
           <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
         </option>
         <option>
-          <name>GFPUCoreSlave</name>
-          <version>21</version>
-          <state>0</state>
-        </option>
-        <option>
           <name>GBECoreSlave</name>
-          <version>21</version>
+          <version>22</version>
           <state>1</state>
         </option>
         <option>
@@ -155,6 +140,34 @@
         </option>
         <option>
           <name>GRuntimeLibThreads</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CoreVariant</name>
+          <version>22</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>GFPUDeviceSlave</name>
+          <state>Default	None</state>
+        </option>
+        <option>
+          <name>FPU2</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>NrRegs</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>NEON</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>GFPUCoreSlave2</name>
+          <version>22</version>
           <state>0</state>
         </option>
       </data>
@@ -954,7 +967,7 @@
       <name>General</name>
       <archiveVersion>3</archiveVersion>
       <data>
-        <version>22</version>
+        <version>24</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -968,11 +981,6 @@
         <option>
           <name>ListPath</name>
           <state>Release\List</state>
-        </option>
-        <option>
-          <name>Variant</name>
-          <version>21</version>
-          <state>0</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -1001,11 +1009,6 @@
           <state>0</state>
         </option>
         <option>
-          <name>FPU</name>
-          <version>5</version>
-          <state>0</state>
-        </option>
-        <option>
           <name>OGCoreOrChip</name>
           <state>0</state>
         </option>
@@ -1029,7 +1032,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state></state>
+          <state>7.40.5.9734</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -1041,7 +1044,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state></state>
+          <state>Default	None</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -1078,13 +1081,8 @@
           <state></state>
         </option>
         <option>
-          <name>GFPUCoreSlave</name>
-          <version>21</version>
-          <state>1</state>
-        </option>
-        <option>
           <name>GBECoreSlave</name>
-          <version>21</version>
+          <version>22</version>
           <state>1</state>
         </option>
         <option>
@@ -1097,6 +1095,34 @@
         </option>
         <option>
           <name>GRuntimeLibThreads</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CoreVariant</name>
+          <version>22</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>GFPUDeviceSlave</name>
+          <state>Default	None</state>
+        </option>
+        <option>
+          <name>FPU2</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>NrRegs</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>NEON</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>GFPUCoreSlave2</name>
+          <version>22</version>
           <state>0</state>
         </option>
       </data>
@@ -1909,6 +1935,12 @@
   </file>
   <file>
     <name>$PROJ_DIR$\keccak.h</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\LFSR86540.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\LFSR86540.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\littlemorelongint.h</name>

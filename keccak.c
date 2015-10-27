@@ -6,15 +6,26 @@
 #define NumberOfRounds 24
 
 /* SHA3 (Keccak) constants for 24 rounds */
-static uint64_t keccak_round_constants[28] = {
+static const uint64_t keccak_round_constants[28] = {
 	0x0000000000000001LL, 0x0000000000008082LL, 0x800000000000808ALL, 0x8000000080008000LL,
 	0x000000000000808BLL, 0x0000000080000001LL, 0x8000000080008081LL, 0x8000000000008009LL,
 	0x000000000000008ALL, 0x0000000000000088LL, 0x0000000080008009LL, 0x000000008000000ALL,
 	0x000000008000808BLL, 0x800000000000008BLL, 0x8000000000008089LL, 0x8000000000008003LL,
 	0x8000000000008002LL, 0x8000000000000080LL, 0x000000000000800ALL, 0x800000008000000ALL,
 	0x8000000080008081LL, 0x8000000000008080LL, 0x0000000080000001LL, 0x8000000080008008LL,
-        0x0000000000000000LL, 0x0000000000000000LL, 0x0000000000000000LL, 0x000000000000000000  ///Calculate additional RC values
+        0x8000000080008082LL, 0x800000008000800aLL, 0x8000000000000003LL, 0x8000000080000009LL
+        /*if you want more rounds, you should generate another table using LSFR8650 function*/
 };
+
+size_t keccak_determine_l(Sponge_t *Sponge){
+  size_t i;
+  for(i=Keccak_l_min; i <= Keccak_l_max; i++){
+    if(Keccak_b_values[i] == Sponge->size){
+      return i;
+    }
+  }
+  return 0;
+}
 
 static void keccak_transformation_pi(void * data, size_t size, size_t block_size){
   
@@ -23,7 +34,7 @@ static void keccak_transformation_theta(void * data, Keccak_lane_size lane_size)
   
 }
 
-void keccak_f (Sponge_t *Sponge){
+void keccak_f (Sponge_t *Sponge){///reimplement this function for general case
   size_t i,l;
   for(i=0; i < Keccak_l_max+1; i++){
     if(Keccak_b_values[i] == Sponge->size) break;
@@ -31,11 +42,26 @@ void keccak_f (Sponge_t *Sponge){
   if(i == (Keccak_l_max+1)){
     return;     //maybe it's better to return erro code?
   }
-  l = i;
-  for(i=0; i<Keccak_nr_values[l]; i++){
-    
+  l = keccak_determine_l(Sponge);
+  if(Keccak_w_values[l] <= 64){
+    for(i=0; i<Keccak_nr_values[l]; i++){
+      keccak_round(Sponge, l ,keccak_round_constants[i] & Keccak_w_values[l]);
+    }
+  } else if(Keccak_w_values[l] == 128) {
+    for(i=0; i<Keccak_nr_values[l]; i++){
+      uint128_t _RC; 
+      _RC.data[0] = 0;
+      //keccak_round128(*Sponge, l, _RC);
+    }
   }
+  
+  for(i=0; i<Sponge->size;i++);
+  
 }
+
+static void keccak_round(void *Sponge, size_t l,  uint64_t RC){
+  
+}  
 
 static void keccak_theta(void *state, Keccak_lane_size lane_size){  
 	unsigned int x;
@@ -209,7 +235,6 @@ static void rhash_sha3_permutation(uint64_t *state)
 	for (round = 0; round < NumberOfRounds; round++)
 	{
 		//keccak_theta(state);
-
 		/* apply Keccak rho() transformation */
 		state[ 1] = ROTL64(state[ 1],  1);
 		state[ 2] = ROTL64(state[ 2], 62);
