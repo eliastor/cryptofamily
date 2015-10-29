@@ -2105,12 +2105,24 @@
     <file>
       <name>$PROJ_DIR$\helper\memtools.h</name>
     </file>
+  </group>
+  <group>
+    <name>macros</name>
+    <file>
+      <name>$PROJ_DIR$\macros\concat.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\macros\min_max.h</name>
+    </file>
     <file>
       <name>$PROJ_DIR$\macros\module.h</name>
     </file>
   </group>
   <file>
-    <name>$PROJ_DIR$\macros\concat.h</name>
+    <name>$PROJ_DIR$\EC.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\EC.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\keccak.c</name>
@@ -2135,6 +2147,9 @@
   </file>
   <file>
     <name>$PROJ_DIR$\sponge.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\stretchint.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\stretchint.h</name>

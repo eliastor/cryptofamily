@@ -1,7 +1,9 @@
 #include <inttypes.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "sponge.h"
+
   uint64_t buf[128];
 
 void T(Sponge_t *Sponge){
@@ -10,7 +12,7 @@ void T(Sponge_t *Sponge){
 
 int main()
 {
-
+  
   register uint32_t i;
   
   for(i=0; i<128*8; i+=0){

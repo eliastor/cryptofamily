@@ -1,6 +1,5 @@
-#ifndef incSponge
 #include "sponge.h"
-#define incSponge
+
 
 
 /// rewrite initialization and limitations. 
@@ -106,5 +105,3 @@ int Sponge_squeeze(Sponge_t *Sponge, void *data){
   (Sponge->transformation_callback)(Sponge);
   return 1;
 }
-
-#endif

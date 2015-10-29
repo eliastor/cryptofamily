@@ -2,215 +2,178 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>2100533252</fileChecksum>
+  <fileChecksum>216046518</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.pbi</file>
-      <file>$PROJ_DIR$\LFSR86540.h</file>
-      <file>$PROJ_DIR$\LFSR86540.c</file>
-      <file>$PROJ_DIR$\macros\module.h</file>
-      <file>$PROJ_DIR$\macros\concat.h</file>
-      <file>$PROJ_DIR$\helper\binary.c</file>
-      <file>$PROJ_DIR$\keccak.c</file>
-      <file>$PROJ_DIR$\helper\memtools.c</file>
-      <file>$PROJ_DIR$\keccak.h</file>
-      <file>$PROJ_DIR$\helper\memtools.h</file>
-      <file>$PROJ_DIR$\littlemorelongint.h</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\config\generic.icf</file>
-      <file>$TOOLKIT_DIR$\lib\shs_l.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\crypto.pbd</file>
-      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
-      <file>$PROJ_DIR$\Debug\Obj\primes.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\sponge.c</file>
-      <file>$PROJ_DIR$\stretchint.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\memtools.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\binary.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\keccak.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\primes.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dl4t_tln.a</file>
       <file>$TOOLKIT_DIR$\lib\rt4t_al.a</file>
       <file>$PROJ_DIR$\Debug\Obj\sponge.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
-      <file>$PROJ_DIR$\primes.c</file>
-      <file>$PROJ_DIR$\Debug\List\primes.lst</file>
-      <file>$PROJ_DIR$\sponge.h</file>
-      <file>$PROJ_DIR$\Debug\List\sponge.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-      <file>$TOOLKIT_DIR$\lib\m4t_tl.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\Debug\List\keccak.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl4t_tln.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\primes.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Debug\List\LFSR86540.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\binary.pbi</file>
+      <file>$PROJ_DIR$\littlemorelongint.c</file>
       <file>$PROJ_DIR$\Debug\Obj\memtools.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\lib\m4t_tl.a</file>
+      <file>$PROJ_DIR$\Debug\List\keccak.lst</file>
       <file>$PROJ_DIR$\Debug\List\binary.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\keccak.__cstat.et</file>
-      <file>$PROJ_DIR$\macros\min_max.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$PROJ_DIR$\Debug\List\memtools.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\sponge.o</file>
       <file>$PROJ_DIR$\Debug\List\main.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\primes.o</file>
       <file>$PROJ_DIR$\Debug\Obj\keccak.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\sponge.pbi</file>
       <file>$PROJ_DIR$\helper\binary.h</file>
       <file>$PROJ_DIR$\Debug\Obj\memtools.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\primes.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sponge.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\macros\min_max.h</file>
       <file>$PROJ_DIR$\Debug\Obj\binary.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\binary.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\LFSR86540.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-      <file>$PROJ_DIR$\littlemorelongint.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\sponge.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$PROJ_DIR$\Debug\List\sponge.lst</file>
+      <file>$PROJ_DIR$\Debug\List\primes.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\keccak.c</file>
+      <file>$PROJ_DIR$\littlemorelongint.h</file>
+      <file>$PROJ_DIR$\helper\memtools.h</file>
+      <file>$PROJ_DIR$\primes.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\config\generic.icf</file>
+      <file>$TOOLKIT_DIR$\lib\shs_l.a</file>
+      <file>$PROJ_DIR$\LFSR86540.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtools.__cstat.et</file>
+      <file>$PROJ_DIR$\sponge.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\binary.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\crypto.pbd</file>
+      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\primes.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\macros\module.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\keccak.pbi</file>
+      <file>$PROJ_DIR$\macros\concat.h</file>
+      <file>$PROJ_DIR$\keccak.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\LFSR86540.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.o</file>
+      <file>$PROJ_DIR$\stretchint.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.pbi</file>
+      <file>$PROJ_DIR$\helper\binary.c</file>
+      <file>$PROJ_DIR$\helper\memtools.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\EC.h</file>
+      <file>$PROJ_DIR$\EC.c</file>
+      <file>$PROJ_DIR$\macros\modules.c</file>
+      <file>$PROJ_DIR$\Debug\List\stretchint.lst</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\stretchint.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\modules.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stretchint.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\modules.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stretchint.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\EC.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\EC.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\EC.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\EC.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\stretchint.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\LFSR86540.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 64 0</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 1</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 2 34 41 45 14 51 13 43 26 28 62 47 65</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14 34 45 41 47 62 65 51 26 28 2 13 43</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 18</file>
+          <file> 49</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\helper\binary.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 48 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 63</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 61</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 58 34 41 45 14 51 13 43 26 28 62 47</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 45 14 62 26 28 41 58 34 47 13 43</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\keccak.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 44 56</file>
+          <name>BICOMP</name>
+          <file> 57</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 29</file>
+          <name>ICCARM</name>
+          <file> 14 21</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 49</file>
+          <file> 16</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 9 34 41 45 14 51 13 43 26 28 62 47 37 5 50 4 6 58 39 20 27 11</file>
+          <name>BICOMP</name>
+          <file> 17 6 10 27 54 40 56 30 50 11 12 31 22 29 59 34 37 53 65 52 58 55</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 51 62 41 50 13 14 45 20 37 26 43 47 6 58 34 9 39 11 28 27 5 4</file>
+          <name>ICCARM</name>
+          <file> 59 31 10 29 40 17 54 11 50 53 6 12 30 58 27 55 65 22 34 56 52 37</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\helper\memtools.c</name>
+      <name>$PROJ_DIR$\primes.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 52 46</file>
+          <name>BICOMP</name>
+          <file> 3</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 59</file>
+          <name>ICCARM</name>
+          <file> 33 24</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 23</file>
+          <file> 51</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 10 34 41 45 14 51 13 43 26 28 62 47 5 50 4 39 20 27</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 4 62 41 14 5 20 26 47 34 45 50 39 51 13 43 27 10</file>
-        </tool>
-      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\main.c</name>
+      <name>$PROJ_DIR$\sponge.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 24</file>
+          <name>BICOMP</name>
+          <file> 25</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 60</file>
+          <name>ICCARM</name>
+          <file> 32 19</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 42</file>
+          <file> 1</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 34 41 45 14 51 13 43 26 28 62 47 37 5 50 4 6 58 39 20 27</file>
+          <name>BICOMP</name>
+          <file> 31 10 58 56 27 50 11 12 52 29 65 40 17 54 6 55 34 53 22 30</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 62 14 47 50 26 45 41 51 28 34 20 37 13 43 6 27 5 4 39 58</file>
+          <name>ICCARM</name>
+          <file> 30 31 10 29 40 17 54 11 50 53 6 12 58 27 55 65 22 34 56 52</file>
         </tool>
       </inputs>
     </file>
@@ -219,53 +182,184 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 15 25 56 0 24 46 55 53 16 32 40 31</file>
+          <file> 75 47 84 21 62 46 9 24 19 83 77 76 74 78</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\sponge.c</name>
+      <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 38 53</file>
+          <name>BICOMP</name>
+          <file> 26</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 57</file>
+          <name>ICCARM</name>
+          <file> 20 46</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 33</file>
+          <file> 35</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 37 34 41 45 14 51 13 43 26 28 62 47 5 50 4 6 58 39 20 27</file>
+          <name>BICOMP</name>
+          <file> 6 10 29 12 65 30 11 54 69 40 17 50 53 31 27 56 58 52 68 55 34 22</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 34 14 39 5 62 4 45 41 28 26 58 50 6 20 51 13 43 47 27 37</file>
+          <name>ICCARM</name>
+          <file> 31 10 29 40 17 54 11 50 53 6 12 69 68 30 58 27 55 65 22 34 56 52</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\primes.c</name>
+      <name>$PROJ_DIR$\LFSR86540.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 36 55</file>
+          <name>BICOMP</name>
+          <file> 64</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 30</file>
+          <name>ICCARM</name>
+          <file> 5 62</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 19</file>
+          <file> 67</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 31 29 10 12 6 4 17 50 53 43 54 11</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 31 10 29 40 17 54 11 50 53 6 12 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\helper\binary.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 47</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 29 10 54 6 22 31 17 50 11 53 12</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 31 10 29 40 17 54 11 50 53 6 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\helper\memtools.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 9</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 58 55 53 10 6 40 56 50 12 31 29 27 34 54 11 52 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 31 10 29 40 17 54 11 50 53 6 12 58 27 55 34 56 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\EC.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 84</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58 29 10 12 34 11 31 27 54 63 6 55 56 40 17 50 53 52 70 89 22 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70 63 31 10 29 40 17 54 11 50 53 6 12 58 27 55 34 56 52 65 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\macros\modules.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\stretchint.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73 83</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 58 55 53 10 6 40 56 50 12 31 29 27 34 54 11 52 63</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63 31 10 29 40 17 54 11 50 53 6 12 58 27 55 34 56 52</file>
+        </tool>
+      </inputs>
     </file>
   </configuration>
   <configuration>

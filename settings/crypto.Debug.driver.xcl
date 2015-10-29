@@ -2,7 +2,7 @@
 
 "--endian=little" 
 
-"--cpu=ARM7TDMI" 
+"--cpu=Cortex-M3" 
 
 "--fpu=None" 
 

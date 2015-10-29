@@ -38,7 +38,7 @@
         </option>
         <option>
           <name>Input description</name>
-          <state></state>
+          <state>Automatic choice of formatter.</state>
         </option>
         <option>
           <name>Output variant</name>
@@ -47,7 +47,7 @@
         </option>
         <option>
           <name>Output description</name>
-          <state></state>
+          <state>Automatic choice of formatter.</state>
         </option>
         <option>
           <name>GOutputBinary</name>
@@ -69,7 +69,7 @@
         </option>
         <option>
           <name>RTDescription</name>
-          <state></state>
+          <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
         </option>
         <option>
           <name>OGProductVersion</name>
@@ -97,7 +97,7 @@
         </option>
         <option>
           <name>GEndianModeBE</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OGBufferedTerminalOutput</name>
@@ -128,7 +128,7 @@
         <option>
           <name>GBECoreSlave</name>
           <version>22</version>
-          <state>1</state>
+          <state>38</state>
         </option>
         <option>
           <name>OGUseCmsis</name>
@@ -145,7 +145,7 @@
         <option>
           <name>CoreVariant</name>
           <version>22</version>
-          <state>0</state>
+          <state>38</state>
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
@@ -168,7 +168,7 @@
         <option>
           <name>GFPUCoreSlave2</name>
           <version>22</version>
-          <state>0</state>
+          <state>38</state>
         </option>
       </data>
     </settings>
@@ -1923,12 +1923,24 @@
     <file>
       <name>$PROJ_DIR$\helper\memtools.h</name>
     </file>
+  </group>
+  <group>
+    <name>macros</name>
+    <file>
+      <name>$PROJ_DIR$\macros\concat.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\macros\min_max.h</name>
+    </file>
     <file>
       <name>$PROJ_DIR$\macros\module.h</name>
     </file>
   </group>
   <file>
-    <name>$PROJ_DIR$\macros\concat.h</name>
+    <name>$PROJ_DIR$\EC.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\EC.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\keccak.c</name>
@@ -1953,6 +1965,9 @@
   </file>
   <file>
     <name>$PROJ_DIR$\sponge.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\stretchint.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\stretchint.h</name>
