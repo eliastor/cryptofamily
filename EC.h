@@ -1,7 +1,7 @@
 #ifndef incEC
 #define inEC
 
-#define Sponge_module 0x1001
+#define EC_module 0x1001
 
 #include "stretchint.h"
 
@@ -25,6 +25,7 @@ typedef enum{
 typedef struct{
   uintx_t a;
   uintx_t b;
+  uintx_t m;
   ec_curve_type_t type;
 } ec_curve_t;
 
@@ -49,6 +50,6 @@ typedef struct{
   uint32_t RESERVED[16];
 }ec_domain_t;
 
-
+#define EC_code_invalid_a_parameter RETURN_CODE(EC_module,-10)
 
 #endif

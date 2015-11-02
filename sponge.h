@@ -52,7 +52,7 @@ struct Spong_t {
 #define Sponge_code_invalid_r RETURN_CODE(Sponge_module, -22)
 #define Sponge_code_null_callback RETURN_CODE(Sponge_module, -23)
 #define Sponge_code_data_too_big RETURN_CODE(Sponge_module, -24)
-#define Sponge_code_invalid_size RETURN_CODE(Sponge_module,-25);
+#define Sponge_code_invalid_size RETURN_CODE(Sponge_module,-25)
 
 int Sponge_init(Sponge_t *Sponge);
 int Sponge_pad_data_null(Sponge_t Sponge, const void* input, void* output, size_t output_size);

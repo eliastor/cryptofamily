@@ -1,6 +1,8 @@
 #include "EC.h"
 
 int ec_curve_init(ec_curve_t *curve){
+  if(uintx_cmp(curve->m, curve->a) <= 0)
+    return EC_code_invalid_a_parameter;
   return 1;
 }
 int ec_curve_set_base(ec_curve_t *curve, ec_point_t *base){
