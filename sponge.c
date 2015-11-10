@@ -83,7 +83,7 @@ int Sponge_absorb(Sponge_t *Sponge, void *data){
     }
   }
   (Sponge->transformation_callback)(Sponge);
-  return 1;
+  return (int) Sponge->size;
 }
 
 int Sponge_squeeze(Sponge_t *Sponge, void *data){

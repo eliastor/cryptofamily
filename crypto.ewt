@@ -2095,6 +2095,57 @@
     </settings>
   </configuration>
   <group>
+    <name>25519</name>
+    <file>
+      <name>$PROJ_DIR$\25519\c25519.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\c25519.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\ed25519.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\ed25519.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\edsign.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\edsign.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\f25519.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\f25519.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\fprime.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\fprime.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\morph25519.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\morph25519.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\sha512.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\25519\sha512.h</name>
+    </file>
+  </group>
+  <group>
+    <name>field</name>
+    <file>
+      <name>$PROJ_DIR$\field\t0r_f25519.c</name>
+    </file>
+  </group>
+  <group>
     <name>helper</name>
     <file>
       <name>$PROJ_DIR$\helper\binary.c</name>
@@ -2147,6 +2198,9 @@
   </file>
   <file>
     <name>$PROJ_DIR$\sponge.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\sponge.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\stretchint.c</name>

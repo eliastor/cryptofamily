@@ -28,7 +28,7 @@ int uintx_mod(uintx_t a, uintx_t m, uintx_t *r){
   return 1;
 }
 int uintx_mulmod(uintx_t a, uintx_t b, uintx_t m, uintx_t *r){ 
-  return 1;`
+  return 1;
 }
 int uintx_invmod(uintx_t a, uintx_t m, uintx_t *r){ 
   return 1;

@@ -1,0 +1,1 @@
+#define DEPRECATED /*please try never use this. You want to know why? 41!*/
