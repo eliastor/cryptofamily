@@ -30,7 +30,7 @@
 typedef struct Spong_t Sponge_t;
 
 typedef void (*Sponge_transformation_callback_t) (Sponge_t *Sponge);
-typedef void (*Sponge_padding_callback_t) (Sponge_t Sponge, const void* input, void* output, size_t output_size);
+typedef int (*Sponge_padding_callback_t) (Sponge_t Sponge, const void* input, void* output, size_t output_size);
 
 struct Spong_t {
    void *state;                                                                 //state of the sponge
@@ -39,6 +39,11 @@ struct Spong_t {
    uint16_t size;                                                                //size of state
    uint16_t r;                                                                   //bitrate
 };
+
+/*typedef struct{
+  Sponge_t Sponge;
+  uint16_t size
+}Sponge_PRNG*/
 
 #define Sponge_null (Sponge_t){NULL,NULL,0,0}
 
@@ -56,8 +61,11 @@ struct Spong_t {
 
 int Sponge_init(Sponge_t *Sponge);
 int Sponge_pad_data_null(Sponge_t Sponge, const void* input, void* output, size_t output_size);
+int Sponge_default_padding(Sponge_t Sponge, const void* input, void* output, size_t output_size);
 int Sponge_absorb(Sponge_t *Sponge, void *data);
 int Sponge_squeeze(Sponge_t *Sponge, void *data);
+inline int Sponge_PRNG_add_seed(Sponge_t *Sponge, void *data);
+inline int Sponge_PRNG_tick(Sponge_t *Sponge, void *data);
 #else
 
 #endif

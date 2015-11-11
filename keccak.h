@@ -77,7 +77,7 @@ static const size_t Keccak_container_calues[Keccak_l_max+1] = {0,0,0,1,2,4,8,8,8
 
 static void keccak_transformation_theta(void * data, Keccak_lane_size);
 static void keccak_round(void *Sponge, size_t l, const uint64_t RC);
-
+void keccak_f (Sponge_t *Sponge);
 
 #define Keccak_code_l_out_of_range RETURN_CODE(Keccak_module, -20);
 #define Keccak_code_invalid_state_size RETURN_CODE(Keccak_module, -21);

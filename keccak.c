@@ -3,17 +3,17 @@
 #include "keccak.h"
 #include <string.h>
 #include <assert.h>
-#define NumberOfRounds 24
 
-/* SHA3 (Keccak) constants for 24 rounds */
-static const uint64_t keccak_round_constants[28] = {
+#define MaxNumberOfRounds 24
+
+static const uint64_t keccak_round_constants[MaxNumberOfRounds] = { //24 is maximum 
 	0x0000000000000001LL, 0x0000000000008082LL, 0x800000000000808ALL, 0x8000000080008000LL,
 	0x000000000000808BLL, 0x0000000080000001LL, 0x8000000080008081LL, 0x8000000000008009LL,
 	0x000000000000008ALL, 0x0000000000000088LL, 0x0000000080008009LL, 0x000000008000000ALL,
 	0x000000008000808BLL, 0x800000000000008BLL, 0x8000000000008089LL, 0x8000000000008003LL,
 	0x8000000000008002LL, 0x8000000000000080LL, 0x000000000000800ALL, 0x800000008000000ALL,
 	0x8000000080008081LL, 0x8000000000008080LL, 0x0000000080000001LL, 0x8000000080008008LL,
-        0x8000000080008082LL, 0x800000008000800aLL, 0x8000000000000003LL, 0x8000000080000009LL
+        //0x8000000080008082LL, 0x800000008000800ALL, 0x8000000000000003LL, 0x8000000080000009LL
         /*if you want more rounds, you should generate another table using LSFR8650 function*/
 };
 
@@ -26,11 +26,29 @@ size_t keccak_determine_l(Sponge_t *Sponge){
   }
   return 0;
 }
+/*
+? step
 
+  ? and ? steps
+  B[y,2*x+3*y] = rot(A[x,y], r[x,y]),                forall (x,y) in (0…4,0…4)
+
+  ? step
+  A[x,y] = B[x,y] xor ((not B[x+1,y]) and B[x+2,y]), forall (x,y) in (0…4,0…4)
+
+  ? step
+  A[0,0] = A[0,0] xor RC
+
+  return A
+*/
 static void keccak_transformation_pi(void * data, size_t size, size_t block_size){
   
 }
 static void keccak_transformation_theta(void * data, Keccak_lane_size lane_size){
+  /*
+  C[x] = A[x,0] xor A[x,1] xor A[x,2] xor A[x,3] xor A[x,4],   forall x in 0…4
+  D[x] = C[x-1] xor rot(C[x+1],1),                             forall x in 0…4
+  A[x,y] = A[x,y] xor D[x],                          forall (x,y) in (0…4,0…4)
+  */
   
 }
 
@@ -47,12 +65,8 @@ void keccak_f (Sponge_t *Sponge){///reimplement this function for general case
     for(i=0; i<Keccak_nr_values[l]; i++){
       keccak_round(Sponge, l ,keccak_round_constants[i] & Keccak_w_values[l]);
     }
-  } else if(Keccak_w_values[l] == 128) {
-    for(i=0; i<Keccak_nr_values[l]; i++){
-      uint128_t _RC; 
-      _RC.data[0] = 0;
-      //keccak_round128(*Sponge, l, _RC);
-    }
+  } else {
+    return ;
   }
   
   for(i=0; i<Sponge->size;i++);
@@ -232,7 +246,7 @@ static void keccak_chi(uint64_t *A)
 static void rhash_sha3_permutation(uint64_t *state)
 {
 	int round;
-	for (round = 0; round < NumberOfRounds; round++)
+	for (round = 0; round < MaxNumberOfRounds; round++)
 	{
 		//keccak_theta(state);
 		/* apply Keccak rho() transformation */
