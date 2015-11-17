@@ -52,7 +52,7 @@ static void keccak_transformation_theta(void * data, Keccak_lane_size lane_size)
   
 }
 
-void keccak_f (Sponge_t *Sponge){///reimplement this function for general case
+void Keccak_f(Sponge_t *Sponge){///reimplement this function for general case
   size_t i,l;
   for(i=0; i < Keccak_l_max+1; i++){
     if(Keccak_b_values[i] == Sponge->size) break;

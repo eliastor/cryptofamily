@@ -2,7 +2,7 @@
 
 #define incSponge_h
 
-#define Sponge_module 0xACCA
+#define Sponge_module 0xACCB
 
 #include <inttypes.h>
 #include <stdlib.h>
@@ -20,12 +20,7 @@
 #else
   
 #endif
-
-#define Sponge_size_max (6400)
-#define Sponge_size_min (200)
-
 /*========Don't edit further if you don't understand what you're doing========*/
-
 //this construction is used because of transformation_callback's arguments need to be defined to declare if without warning
 typedef struct Spong_t Sponge_t;
 
@@ -36,14 +31,16 @@ struct Spong_t {
    void *state;                                                                 //state of the sponge
    Sponge_transformation_callback_t transformation_callback;                     //callback for sponge transformation function.
    Sponge_padding_callback_t padding_callback;                                  //callback for sponge padding function
-   uint16_t size;                                                                //size of state
    uint16_t r;                                                                   //bitrate
 };
 
-/*typedef struct{
-  Sponge_t Sponge;
-  uint16_t size
-}Sponge_PRNG*/
+#ifdef Sponge_x_current_size
+#if Sponge_x_current_size != 1600
+#error "Unable to include different fixed-size sponges. Use variable-size one"
+#endif
+#else
+#define Sponge_x_current_size 1600
+#endif
 
 #define Sponge_null (Sponge_t){NULL,NULL,0,0}
 

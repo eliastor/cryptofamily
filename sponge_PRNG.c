@@ -1,1 +1,1 @@
-#include "RNG.h"
+#include "sponge_PRNG.h"

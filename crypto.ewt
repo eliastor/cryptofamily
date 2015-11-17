@@ -2203,12 +2203,6 @@
     <name>$PROJ_DIR$\sponge.h</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\sponge_PRNG.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\sponge_PRNG.h</name>
-  </file>
-  <file>
     <name>$PROJ_DIR$\stretchint.c</name>
   </file>
   <file>

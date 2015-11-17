@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
-#include "sponge.h"
+#include "sponge1600.h"
 #include "keccak.h"
 
   static uint64_t buf[128];
@@ -18,9 +18,8 @@ int rnd_init(){
   //we should seed initial state by following code:
   sponge_PRNG.padding_callback = Sponge_default_padding;
   sponge_PRNG.state = (void *) sponge_PRNG_state;
-  sponge_PRNG.transformation_callback = keccak_f;
+  sponge_PRNG.transformation_callback = Keccak_f;
   sponge_PRNG.r = 32;
-  sponge_PRNG.size = 1600;
   if(Sponge_init(&sponge_PRNG)){
     //eggog;
   }
@@ -62,9 +61,8 @@ int main(){
   
   Sponge_t Sponge = Sponge_null;
   Sponge.state = (void *) &buf;
-  Sponge.padding_callback = (Sponge_padding_callback_t) Sponge_pad_data_null;
-  Sponge.transformation_callback = (Sponge_transformation_callback_t) T;
-  Sponge.size = 1600;
+  Sponge.padding_callback = (Sponge_padding_callback_t) Sponge_default_padding;
+  Sponge.transformation_callback = (Sponge_transformation_callback_t) Keccak_f;
   Sponge.r = 64;
   
   Sponge_init(&Sponge);
