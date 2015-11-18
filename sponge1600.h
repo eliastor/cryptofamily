@@ -14,12 +14,12 @@
 #include <assert.h>
 #include <string.h>
 
-
 #ifndef __ALLOC_ON
   #warning "Sponge: No HEAP allocation is defined. only staticly defined states are valid.";
 #else
-  
+
 #endif
+
 /*========Don't edit further if you don't understand what you're doing========*/
 //this construction is used because of transformation_callback's arguments need to be defined to declare if without warning
 typedef struct Spong_t Sponge_t;
@@ -59,8 +59,10 @@ struct Spong_t {
 int Sponge_init(Sponge_t *Sponge);
 int Sponge_pad_data_null(Sponge_t Sponge, const void* input, void* output, size_t output_size);
 int Sponge_default_padding(Sponge_t Sponge, const void* input, void* output, size_t output_size);
-int Sponge_absorb(Sponge_t *Sponge, void *data);
-int Sponge_squeeze(Sponge_t *Sponge, void *data);
+extern inline int Sponge_absorb_block(Sponge_t *Sponge, void *data);
+extern inline int Sponge_squeeze_block(Sponge_t *Sponge, void *data);
+int Sponge_absorb(Sponge_t *Sponge, void *data, size_t length);
+int Sponge_squeeze(Sponge_t *Sponge, void *data, size_t length);
 extern inline int Sponge_PRNG_add_seed(Sponge_t *Sponge, void *data);
 extern inline int Sponge_PRNG_tick(Sponge_t *Sponge, void *data);
 #else

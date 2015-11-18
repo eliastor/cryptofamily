@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "sponge1600.h"
 #include "keccak.h"
+#include "SHA3.h"
 
   static uint64_t buf[128];
   uint32_t sponge_PRNG_state[1600/32]; /*idealy it shouldn't be initialized.*/
@@ -38,7 +39,35 @@ uint32_t rnd(){
   return data;
 }
 
+inline void *mem_last_padded4(void *initial, uint32_t size){
+  void *end;
+  end = (uint32_t *) ((uint32_t *)initial)+ (size/4); //maybe it's better to end = initial + size without cast
+  return end;
+}
+
+inline void *mem_last(void *initial, uint32_t size){
+  void *end;  
+  end = (uint8_t *) ((uint8_t *) initial) +(size);
+  return end;
+}
+
+//------------------------------------------------------------------------------
+typedef int (*mem_do_callback32_t)(uint32_t *data);
+typedef int (*mem_do_callback8_t)(uint8_t *data);
+typedef int (*mem_do_callback_t)(void *data);
+int mem_do_extended(void *chunk, uint32_t size, mem_do_callback32_t callback32, mem_do_callback8_t callback8){
+  
+  return 0;
+}
+int mem_do(void *chunk, uint32_t size, mem_do_callback_t callback){
+  return 0;
+}
+//------------------------------------------------------------------------------
+
 int main(){
+  
+  
+  
   
   
   //if we want to get random number just make Sponge_PRNG_tick()
@@ -56,7 +85,6 @@ int main(){
     ptr[6]= (char) i++;
     ptr[7]= (char) i++;
   }
-  
   
   
   Sponge_t Sponge = Sponge_null;

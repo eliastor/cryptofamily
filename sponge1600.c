@@ -23,7 +23,7 @@ int Sponge_init(Sponge_t *Sponge){
     return Sponge_code_null_callback;
   }
 #ifndef __ALLOC_ON
-  //does we need to allocate automatically
+  //does we need to allocate automatically?
 #else
 #endif
   
@@ -65,44 +65,19 @@ int Sponge_default_padding(Sponge_t Sponge, const void* input, void* output, siz
 }
 
 
-int Sponge_absorb(Sponge_t *Sponge, void *data){///rewrite: use ladder 64->32->8 bit transfer sequently.
+inline int Sponge_absorb_block(Sponge_t *Sponge, void *data){///rewrite: use ladder 128->64->32->8 bit transfer sequently.
   //we expect that data is valid and have apropriate length
   size_t i;
-  
-  ///we can use wise transfer: at first 64bit transfer as much data as possible. then use 8bit transfer for tail data.
-  if((Sponge->r % (sizeof(uint64_t)) == 0)){//determine can we use 64bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint64_t)*8); i++){
-      ((uint64_t *)Sponge->state)[i] ^= ((uint64_t *)data)[i];
-    }
-  } else if((Sponge->r % (sizeof(uint32_t)) == 0)){//determine can we use 32bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint32_t)*8); i++){
-      ((uint32_t *)Sponge->state)[i] ^= ((uint32_t *)data)[i];
-    }
-  } else{//otherwise we use 8bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint8_t)*8); i++){
-      ((uint8_t *)Sponge->state)[i] ^= ((uint8_t *)data)[i];
-    }
+  for(i = 0; i < Sponge->r / (sizeof(uint64_t)*8); i++){
+    ((uint64_t *)Sponge->state)[i] ^= ((uint64_t *)data)[i];
   }
   (Sponge->transformation_callback)(Sponge);
   return (int) Sponge->size;
 }
 
-int Sponge_squeeze(Sponge_t *Sponge, void *data){///rewrite: use ladder 64->32->8 bit transfer sequently.
+inline int Sponge_squeeze_block(Sponge_t *Sponge, void *data){
   //we expect that data is a chunk of valid size.
-    size_t i;
-  if((Sponge->r % (sizeof(uint64_t)) == 0)){//determine can we use 64bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint64_t)*8); i++){
-      ((uint64_t *)data)[i] = ((uint64_t *)Sponge->state)[i];
-    }
-  } else if((Sponge->r % (sizeof(uint32_t)) == 0)){//determine can we use 32bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint32_t)*8); i++){
-      ((uint32_t *)Sponge->state)[i] ^= ((uint32_t *)data)[i];
-    }
-  } else{//otherwise we use 8bit transfer
-    for(i = 0; i < Sponge->r / (sizeof(uint8_t)*8); i++){
-      ((uint8_t *)Sponge->state)[i] ^= ((uint8_t *)data)[i];
-    }
-  }
+  memcpy(data, (const void *) Sponge->state), Sponge->r / sizeof(uint8_t)*8);
   (Sponge->transformation_callback)(Sponge);
   return 1;
 }
