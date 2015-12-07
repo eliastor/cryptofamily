@@ -6,8 +6,6 @@
 #include "keccak.h"
 #include "SHA3.h"
 
-#include "wolf25519/ed25519.h"
-
   static uint64_t buf[128];
   uint32_t sponge_PRNG_state[1600/32]; /*idealy it shouldn't be initialized.*/
   Sponge_t sponge_PRNG;
