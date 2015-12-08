@@ -31,7 +31,7 @@
 #ifdef HAVE_CURVE25519
 
 #include <curve25519.h>
-#include <error-crypt.h>
+#include "error-crypt.h"
 #ifdef NO_INLINE
     #include "misc.h"
 #else

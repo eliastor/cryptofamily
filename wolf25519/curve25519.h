@@ -26,7 +26,7 @@
 
 #ifdef HAVE_CURVE25519
 
-#include <fe_operations.h>
+#include "fe_operations.h"
 #include <random.h>
 
 #ifdef __cplusplus

@@ -31,7 +31,7 @@
 #ifndef CURVED25519_SMALL
     #include <stdint.h>
 #endif
-#include <fe_operations.h>
+#include "fe_operations.h"
 
 /*
 ge means group element.

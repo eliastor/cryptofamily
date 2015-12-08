@@ -30,7 +30,7 @@
 #if defined(CURVED25519_SMALL) /* use slower code that takes less memory */
 #if defined(HAVE_ED25519) || defined(HAVE_CURVE25519)
 
-#include <fe_operations.h>
+#include "fe_operations.h"
 
 #ifdef NO_INLINE
     #include "misc.h"

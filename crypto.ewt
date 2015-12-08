@@ -2190,18 +2190,6 @@
       <name>$PROJ_DIR$\wolf25519\dh.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\dsa.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\dsa.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ecc.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ecc.h</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\wolf25519\ecc_fp.c</name>
     </file>
     <file>
@@ -2263,12 +2251,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\mpi_superclass.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\poly1305.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\poly1305.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\random.c</name>

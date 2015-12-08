@@ -69,8 +69,8 @@ int wc_Sha384Final(Sha384* sha, byte* out)
 
 #endif /* WOLFSSL_SHA384 */
 #else /* else build without using fips */
-#include "logging.h>
-#include "error-crypt.h>
+#include "logging.h"
+#include "error-crypt.h"
 
 #ifdef NO_INLINE
     #include "misc.h>

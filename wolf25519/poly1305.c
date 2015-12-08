@@ -30,7 +30,7 @@
 
 #ifdef HAVE_POLY1305
 #include <poly1305.h>
-#include <error-crypt.h>
+#include "error-crypt.h"
 #include <logging.h>
 #ifdef NO_INLINE
     #include "misc.h"

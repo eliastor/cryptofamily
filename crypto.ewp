@@ -187,6 +187,12 @@
           <name>CCDefines</name>
           <state>SINGLE_THREADED</state>
           <state>NO_DEV_RANDOM</state>
+          <state>HAVE_ED25519</state>
+          <state>NO_MD5</state>
+          <state>NO_SHA</state>
+          <state>WOLFSSL_SHA512</state>
+          <state>__CORTEX_M3__</state>
+          <state>NO_DEV_RANDOM</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -2012,18 +2018,6 @@
       <name>$PROJ_DIR$\wolf25519\dh.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\dsa.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\dsa.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ecc.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ecc.h</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\wolf25519\ecc_fp.c</name>
     </file>
     <file>
@@ -2085,12 +2079,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\mpi_superclass.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\poly1305.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\poly1305.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\random.c</name>

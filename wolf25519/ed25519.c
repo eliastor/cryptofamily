@@ -30,13 +30,13 @@
 
 #ifdef HAVE_ED25519
 
-#include <ed25519.h>
-#include <error-crypt.h>
-#include <hash.h>
+#include "ed25519.h"
+#include "error-crypt.h"
+#include "hash.h"
 #ifdef NO_INLINE
     #include "misc.h"
 #else
-    #include <misc.c>
+    #include "misc.c"
 #endif
 
 /* generate an ed25519 key pair.

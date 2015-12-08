@@ -30,7 +30,7 @@
 
 
 #include <compress.h>
-#include <error-crypt.h>
+#include "error-crypt.h"
 #include <logging.h>
 #ifdef NO_INLINE
     #include "misc.h"

@@ -26,10 +26,10 @@
 
 #ifdef HAVE_ED25519
 
-#include <fe_operations.h>
-#include <ge_operations.h>
-#include <random.h>
-#include <sha512.h>
+#include "fe_operations.h"
+#include "ge_operations.h"
+#include "random.h"
+#include "sha512.h"
 
 #ifdef __cplusplus
     extern "C" {

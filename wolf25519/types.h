@@ -59,11 +59,13 @@
 	            /* long long should be 64bit */
 	            #define SIZEOF_LONG_LONG 8
 	        #endif
+
 	    #endif
+
 	#endif
 
-
-	#if defined(_MSC_VER) || defined(__BCPLUSPLUS__)
+        
+        #if defined(_MSC_VER) || defined(__BCPLUSPLUS__)
 	    #define WORD64_AVAILABLE
 	    #define W64LIT(x) x##ui64
 	    typedef unsigned __int64 word64;

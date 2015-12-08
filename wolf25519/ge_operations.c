@@ -31,9 +31,9 @@
 #ifndef CURVED25519_SMALL /* run when not defined to use small memory math */
 #ifdef HAVE_ED25519
 
-#include <ge_operations.h>
-#include <ed25519.h>
-#include <error-crypt.h>
+#include "ge_operations.h"
+#include "ed25519.h"
+#include "error-crypt.h"
 #ifdef NO_INLINE
     #include "misc.h"
 #else

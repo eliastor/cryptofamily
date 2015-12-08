@@ -94,13 +94,7 @@ int  wc_RNG_GenerateByte(WC_RNG* rng, byte* b)
     #endif
 #endif /* HAVE_HASHDRBG || NO_RC4 */
 
-#if defined(USE_WINDOWS_API)
-    #ifndef _WIN32_WINNT
-        #define _WIN32_WINNT 0x0400
-    #endif
-    #include <windows.h>
-    #include <wincrypt.h>
-#else
+
     #if !defined(NO_DEV_RANDOM) && !defined(CUSTOM_RAND_GENERATE) && \
         !defined(WOLFSSL_GENSEED_FORTEST) && !defined(WOLFSSL_MDK_ARM) && \
         !defined(WOLFSSL_IAR_ARM) && !defined(WOLFSSL_ROWLEY_ARM)
@@ -108,29 +102,10 @@ int  wc_RNG_GenerateByte(WC_RNG* rng, byte* b)
         #ifndef EBSNET
             #include <unistd.h>
         #endif
-    #elif defined(FREESCALE_TRNG)
-        #define TRNG_INSTANCE (0)
-        #include "fsl_device_registers.h"
-        #include "fsl_trng_driver.h"
     #else
         /* include headers that may be needed to get good seed */
     #endif
-#endif /* USE_WINDOWS_API */
 
-#ifdef HAVE_INTEL_RDGEN
-    static int wc_InitRng_IntelRD(void) ;
-    #if defined(HAVE_HASHDRBG) || defined(NO_RC4)
-	static int wc_GenerateSeed_IntelRD(OS_Seed* os, byte* output, word32 sz) ;
-    #else
-    static int wc_GenerateRand_IntelRD(OS_Seed* os, byte* output, word32 sz) ;
-    #endif
-    static word32 cpuid_check = 0 ;
-    static word32 cpuid_flags = 0 ;
-    #define CPUID_RDRAND 0x4
-    #define CPUID_RDSEED 0x8
-    #define IS_INTEL_RDRAND     (cpuid_flags&CPUID_RDRAND)
-    #define IS_INTEL_RDSEED     (cpuid_flags&CPUID_RDSEED)
-#endif
 
 #if defined(HAVE_HASHDRBG) || defined(NO_RC4)
 
