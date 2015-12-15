@@ -193,6 +193,8 @@
           <state>WOLFSSL_SHA512</state>
           <state>__CORTEX_M3__</state>
           <state>NO_DEV_RANDOM</state>
+          <state>NO_FILESYSTEM</state>
+          <state>NO_CERT</state>
         </option>
         <option>
           <name>CCPreprocFile</name>

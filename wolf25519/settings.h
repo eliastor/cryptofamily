@@ -26,10 +26,6 @@
 #ifndef WOLF_CRYPT_SETTINGS_H
 #define WOLF_CRYPT_SETTINGS_H
 
-#ifdef __cplusplus
-    extern "C" {
-#endif
-
 /* Uncomment next line if using IPHONE */
 /* #define IPHONE */
 
@@ -298,25 +294,13 @@
     #define NO_FILESYSTEM
 #endif
 
-#ifdef FREERTOS_WINSIM
-    #define FREERTOS
-    #define USE_WINDOWS_API
-#endif
-
-
 #ifdef WOLFSSL_VXWORKS
     #define NO_DEV_RANDOM
     #define NO_WRITEV
 #endif
 
 
-/* Micrium will use Visual Studio for compilation but not the Win32 API */
-#if defined(_WIN32) && !defined(MICRIUM) && !defined(FREERTOS) && !defined(FREERTOS_TCP)\
-        && !defined(EBSNET) && !defined(WOLFSSL_EROAD)
-    #define USE_WINDOWS_API
-#endif
-
-#if defined(WOLFSSL_uITRON4)
+ #if defined(WOLFSSL_uITRON4)
 
 #define XMALLOC_USER
 #include <stddef.h>
@@ -992,9 +976,5 @@ static char *fgets(char *buff, int sz, FILE *fp)
 
 /* Place any other flags or defines here */
 
-
-#ifdef __cplusplus
-    }   /* extern "C" */
-#endif
 
 #endif

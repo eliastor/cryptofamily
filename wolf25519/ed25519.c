@@ -21,10 +21,6 @@
 
  /* Based On Daniel J Bernstein's ed25519 Public Domain ref10 work. */
 
-#ifdef HAVE_CONFIG_H
-    #include "config.h"
-#endif
-
 /* in case user set HAVE_ED25519 there */
 #include "settings.h"
 

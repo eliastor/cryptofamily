@@ -25,15 +25,6 @@
 
 #include "types.h"
 
-#ifdef HAVE_FIPS
-/* for fips @wc_fips */
-#include <cyassl/ctaocrypt/random.h>
-#endif
-
-#ifdef __cplusplus
-    extern "C" {
-#endif
-
 #ifndef HAVE_FIPS /* avoid redefining structs and macros */
 #if defined(WOLFSSL_FORCE_RC4_DRBG) && defined(NO_RC4)
     #error Cannot have WOLFSSL_FORCE_RC4_DRBG and NO_RC4 defined.
@@ -95,10 +86,6 @@ typedef struct WC_RNG {
 typedef struct WC_RNG {
     OS_Seed seed;
     Arc4    cipher;
-#ifdef HAVE_CAVIUM
-    int    devId;           /* nitrox device id */
-    word32 magic;           /* using cavium magic */
-#endif
 } WC_RNG;
 
 
@@ -136,10 +123,6 @@ WOLFSSL_API int  wc_FreeRng(WC_RNG*);
                                         const byte* entropyB, word32 entropyBSz,
                                         byte* output, word32 outputSz);
 #endif /* HAVE_HASHDRBG || NO_RC4 */
-
-#ifdef __cplusplus
-    } /* extern "C" */
-#endif
 
 #endif /* WOLF_CRYPT_RANDOM_H */
 

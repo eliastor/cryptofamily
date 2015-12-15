@@ -31,11 +31,6 @@
 #include "random.h"
 #include "sha512.h"
 
-#ifdef __cplusplus
-    extern "C" {
-#endif
-
-
 /* info about EdDSA curve specifically ed25519, defined as an elliptic curve
    over GF(p) */
 /*
@@ -97,10 +92,6 @@ WOLFSSL_API
 int wc_ed25519_pub_size(ed25519_key* key);
 WOLFSSL_API
 int wc_ed25519_sig_size(ed25519_key* key);
-
-#ifdef __cplusplus
-    }    /* extern "C" */
-#endif
 
 #endif /* HAVE_ED25519 */
 #endif /* WOLF_CRYPT_ED25519_H */
