@@ -537,7 +537,7 @@
         </option>
         <option>
           <name>AXRef</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>AXRefDefines</name>
@@ -1971,6 +1971,9 @@
   </group>
   <group>
     <name>field</name>
+    <excluded>
+      <configuration>Debug</configuration>
+    </excluded>
     <file>
       <name>$PROJ_DIR$\field\t0r_f25519.c</name>
     </file>
@@ -2002,37 +2005,10 @@
   <group>
     <name>wolf25519</name>
     <file>
-      <name>$PROJ_DIR$\wolf25519\compress.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\compress.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\curve25519.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\curve25519.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\dh.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\dh.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ecc_fp.c</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\wolf25519\ed25519.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\ed25519.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\error-crypt.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\fe_low_mem.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\fe_operations.c</name>
@@ -2041,82 +2017,16 @@
       <name>$PROJ_DIR$\wolf25519\fe_operations.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\ge_low_mem.c</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\wolf25519\ge_operations.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\ge_operations.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\hash.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\integer.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\integer.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\logging.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\logging.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\memory.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\memory.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\misc.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\misc.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\mpi_class.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\mpi_superclass.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\random.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\random.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\settings.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha256.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha256.h</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\wolf25519\sha512.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\wolf25519\sha512.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\types.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\visibility.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\wc_port.h</name>
     </file>
   </group>
   <file>

@@ -2,318 +2,185 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>330638974</fileChecksum>
+  <fileChecksum>1867344735</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\wolf25519\dh.h</file>
-      <file>$PROJ_DIR$\wolf25519\ecc_fp.c</file>
-      <file>$PROJ_DIR$\wolf25519\dh.c</file>
       <file>$PROJ_DIR$\wolf25519\curve25519.h</file>
-      <file>$PROJ_DIR$\wolf25519\sha512.h</file>
-      <file>$PROJ_DIR$\wolf25519\wc_port.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\misc.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\compress.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\fe_operations.pbi</file>
-      <file>$PROJ_DIR$\wolf25519\sha512.c</file>
-      <file>$PROJ_DIR$\keccak.c</file>
-      <file>$PROJ_DIR$\keccak.h</file>
-      <file>$PROJ_DIR$\LFSR86540.h</file>
-      <file>$PROJ_DIR$\littlemorelongint.h</file>
-      <file>$PROJ_DIR$\stretchint.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\random.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\ecc_fp.lst</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\random.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$PROJ_DIR$\EC.c</file>
-      <file>$PROJ_DIR$\sponge.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\dh.o</file>
-      <file>$PROJ_DIR$\Debug\List\sha.lst</file>
-      <file>$PROJ_DIR$\stretchint.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\binary.__cstat.et</file>
-      <file>$PROJ_DIR$\EC.h</file>
-      <file>$PROJ_DIR$\primes.c</file>
-      <file>$PROJ_DIR$\sponge.c</file>
-      <file>$PROJ_DIR$\LFSR86540.c</file>
-      <file>$PROJ_DIR$\wolf25519\visibility.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\poly1305.__cstat.et</file>
-      <file>$PROJ_DIR$\wolf25519\types.h</file>
-      <file>$PROJ_DIR$\Debug\List\LFSR86540.lst</file>
-      <file>$PROJ_DIR$\wolf25519\logging.h</file>
-      <file>$PROJ_DIR$\wolf25519\memory.c</file>
-      <file>$PROJ_DIR$\wolf25519\misc.c</file>
-      <file>$PROJ_DIR$\wolf25519\misc.h</file>
-      <file>$PROJ_DIR$\wolf25519\fe_operations.h</file>
-      <file>$PROJ_DIR$\wolf25519\ge_operations.h</file>
-      <file>$PROJ_DIR$\wolf25519\random.h</file>
-      <file>$PROJ_DIR$\wolf25519\sha.c</file>
-      <file>$PROJ_DIR$\wolf25519\hash.h</file>
       <file>$PROJ_DIR$\wolf25519\ed25519.c</file>
-      <file>$PROJ_DIR$\wolf25519\memory.h</file>
-      <file>$PROJ_DIR$\wolf25519\mpi_class.h</file>
-      <file>$PROJ_DIR$\wolf25519\fe_low_mem.c</file>
-      <file>$PROJ_DIR$\wolf25519\integer.c</file>
-      <file>$PROJ_DIR$\wolf25519\ed25519.h</file>
-      <file>$PROJ_DIR$\wolf25519\ge_low_mem.c</file>
-      <file>$PROJ_DIR$\wolf25519\fe_operations.c</file>
-      <file>$PROJ_DIR$\wolf25519\ge_operations.c</file>
-      <file>$PROJ_DIR$\wolf25519\settings.h</file>
-      <file>$PROJ_DIR$\wolf25519\sha.h</file>
-      <file>$PROJ_DIR$\wolf25519\random.c</file>
-      <file>$PROJ_DIR$\wolf25519\sha256.c</file>
-      <file>$PROJ_DIR$\wolf25519\sha256.h</file>
-      <file>$PROJ_DIR$\wolf25519\logging.c</file>
-      <file>$PROJ_DIR$\wolf25519\error-crypt.h</file>
-      <file>$PROJ_DIR$\wolf25519\integer.h</file>
-      <file>$PROJ_DIR$\wolf25519\mpi_superclass.h</file>
-      <file>$PROJ_DIR$\macros\module.h</file>
-      <file>$PROJ_DIR$\wolf25519\compress.c</file>
-      <file>$PROJ_DIR$\wolf25519\compress.h</file>
-      <file>$PROJ_DIR$\wolf25519\curve25519.c</file>
-      <file>$PROJ_DIR$\25519\ed25519.c</file>
-      <file>$PROJ_DIR$\25519\fprime.h</file>
-      <file>$PROJ_DIR$\helper\binary.c</file>
-      <file>$PROJ_DIR$\macros\min_max.h</file>
-      <file>$PROJ_DIR$\25519\edsign.h</file>
-      <file>$PROJ_DIR$\25519\f25519.c</file>
-      <file>$PROJ_DIR$\25519\f25519.h</file>
-      <file>$PROJ_DIR$\25519\morph25519.h</file>
-      <file>$PROJ_DIR$\field\t0r_f25519.c</file>
-      <file>$PROJ_DIR$\25519\c25519.c</file>
-      <file>$PROJ_DIR$\25519\ed25519.h</file>
-      <file>$PROJ_DIR$\25519\c25519.h</file>
-      <file>$PROJ_DIR$\25519\edsign.c</file>
-      <file>$PROJ_DIR$\25519\morph25519.c</file>
-      <file>$PROJ_DIR$\25519\fprime.c</file>
-      <file>$PROJ_DIR$\25519\sha512.h</file>
-      <file>$PROJ_DIR$\helper\memtools.h</file>
-      <file>$PROJ_DIR$\macros\concat.h</file>
-      <file>$PROJ_DIR$\25519\sha512.c</file>
-      <file>$PROJ_DIR$\helper\memtools.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\memory.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\compress.lst</file>
-      <file>$PROJ_DIR$\Debug\List\ecc_fp.i</file>
-      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
-      <file>$PROJ_DIR$\Debug\List\misc.lst</file>
-      <file>$PROJ_DIR$\Debug\List\sha512.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\dsa.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
-      <file>$PROJ_DIR$\Debug\List\random.i</file>
-      <file>$PROJ_DIR$\Debug\List\memtools.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha256.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\integer.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-      <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
-      <file>$PROJ_DIR$\Debug\List\dsa.i</file>
+      <file>$PROJ_DIR$\Debug\List\sponge.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\t0r_f25519.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtools.o</file>
+      <file>$PROJ_DIR$\Debug\List\binary.i</file>
+      <file>$PROJ_DIR$\Debug\List\primes.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\List\main.i</file>
+      <file>$PROJ_DIR$\Debug\Obj\sponge.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ed25519.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\Debug\List\ed25519.lst</file>
+      <file>$PROJ_DIR$\Debug\List\t0r_f25519.i</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\List\binary.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.o</file>
+      <file>$PROJ_DIR$\Debug\List\curve25519.i</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\binary.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ge_operations.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\binary.o</file>
+      <file>$PROJ_DIR$\Debug\List\fe_operations.lst</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\EC.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\fe_operations.i</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\crypto.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\SHA3.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+      <file>$PROJ_DIR$\Debug\List\keccak.lst</file>
+      <file>$PROJ_DIR$\Debug\List\main.lst</file>
+      <file>$PROJ_DIR$\Debug\List\LFSR86540.i</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Debug\List\t0r_f25519.lst</file>
+      <file>$PROJ_DIR$\helper\binary.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\sha512.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\t0r_f25519.o</file>
+      <file>$PROJ_DIR$\Debug\List\sponge.i</file>
+      <file>$PROJ_DIR$\sponge1600.h</file>
       <file>$PROJ_DIR$\Debug\List\memtools.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\logging.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
       <file>$PROJ_DIR$\Debug\List\primes.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\primes.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
       <file>$PROJ_DIR$\Debug\Obj\keccak.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\ed25519.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\List\sha512.i</file>
+      <file>$PROJ_DIR$\Debug\List\memtools.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sha512.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
       <file>$PROJ_DIR$\Debug\Obj\curve25519.pbi</file>
       <file>$PROJ_DIR$\Debug\List\ge_operations.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha256.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\curve25519.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$PROJ_DIR$\Debug\List\ecc.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha512.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$PROJ_DIR$\Debug\List\keccak.i</file>
-      <file>$PROJ_DIR$\Debug\List\curve25519.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\logging.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\ecc.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\compress.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\compress.i</file>
-      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
-      <file>$PROJ_DIR$\Debug\List\ed25519.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\compress.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\logging.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\fe_low_mem.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\ge_operations.i</file>
-      <file>$PROJ_DIR$\Debug\List\poly1305.lst</file>
-      <file>$PROJ_DIR$\Debug\List\stretchint.i</file>
-      <file>$PROJ_DIR$\Debug\List\misc.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\dh.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\EC.i</file>
       <file>$PROJ_DIR$\Debug\Obj\curve25519.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\integer.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\dh.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\EC.o</file>
-      <file>$PROJ_DIR$\Debug\List\memory.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\memtools.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\ed25519.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\logging.i</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$PROJ_DIR$\Debug\List\fe_low_mem.i</file>
-      <file>$PROJ_DIR$\Debug\List\dh.i</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\t0r_f25519.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\integer.i</file>
-      <file>$PROJ_DIR$\Debug\List\stretchint.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\EC.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\keccak.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\poly1305.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\keccak.o</file>
-      <file>$PROJ_DIR$\wolf25519\dsa.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\fe_low_mem.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_operations.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\misc.o</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\fe_low_mem.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\logging.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_low_mem.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\stretchint.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\misc.__cstat.et</file>
-      <file>$PROJ_DIR$\wolf25519\dsa.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_operations.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc_fp.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\curve25519.lst</file>
+      <file>$PROJ_DIR$\Debug\List\keccak.i</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Debug\List\ed25519.i</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\Debug\List\stretchint.i</file>
+      <file>$PROJ_DIR$\Debug\List\EC.i</file>
+      <file>$PROJ_DIR$\Debug\List\ge_operations.i</file>
+      <file>$PROJ_DIR$\Debug\List\sha512.lst</file>
       <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dsa.pbi</file>
-      <file>$PROJ_DIR$\wolf25519\ecc.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\random.o</file>
       <file>$PROJ_DIR$\Debug\Obj\stretchint.o</file>
       <file>$PROJ_DIR$\Debug\Obj\fe_operations.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\fe_operations.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_low_mem.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\integer.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\memtools.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\sponge.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\primes.o</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$PROJ_DIR$\Debug\List\EC.lst</file>
       <file>$PROJ_DIR$\Debug\Obj\primes.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_low_mem.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\poly1305.i</file>
-      <file>$PROJ_DIR$\Debug\List\sha512.lst</file>
-      <file>$PROJ_DIR$\Debug\List\fe_low_mem.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$PROJ_DIR$\Debug\List\ed25519.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\poly1305.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\main.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha256.o</file>
-      <file>$PROJ_DIR$\wolf25519\poly1305.c</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\memory.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\curve25519.i</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\sponge.o</file>
-      <file>$PROJ_DIR$\Debug\List\binary.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc.o</file>
-      <file>$PROJ_DIR$\Debug\List\binary.i</file>
-      <file>$PROJ_DIR$\Debug\List\primes.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc_fp.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\ed25519.o</file>
-      <file>$PROJ_DIR$\Debug\List\t0r_f25519.i</file>
-      <file>$PROJ_DIR$\Debug\List\sponge.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\memtools.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\binary.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\LFSR86540.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\ge_operations.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\t0r_f25519.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\keccak.lst</file>
-      <file>$PROJ_DIR$\Debug\List\main.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\binary.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha512.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\dh.lst</file>
-      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$PROJ_DIR$\Debug\List\fe_operations.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\ecc_fp.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$PROJ_DIR$\Debug\List\ge_low_mem.lst</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\EC.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
-      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
-      <file>$PROJ_DIR$\Debug\List\fe_operations.i</file>
-      <file>$PROJ_DIR$\Debug\Obj\crypto.pbd</file>
-      <file>$PROJ_DIR$\SHA3.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-      <file>$PROJ_DIR$\Debug\List\memory.lst</file>
-      <file>$PROJ_DIR$\Debug\List\random.lst</file>
-      <file>$PROJ_DIR$\Debug\List\dsa.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\stretchint.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\sha512.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\t0r_f25519.o</file>
-      <file>$PROJ_DIR$\helper\binary.h</file>
-      <file>$PROJ_DIR$\sponge1600.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\sponge.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\memory.pbi</file>
-      <file>$PROJ_DIR$\Debug\List\LFSR86540.i</file>
-      <file>$PROJ_DIR$\Debug\List\sha256.lst</file>
-      <file>$PROJ_DIR$\Debug\Obj\integer.o</file>
-      <file>$PROJ_DIR$\Debug\List\t0r_f25519.lst</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\dsa.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\List\sponge.i</file>
-      <file>$PROJ_DIR$\Debug\List\ge_low_mem.i</file>
-      <file>$PROJ_DIR$\Debug\List\sha256.i</file>
-      <file>$PROJ_DIR$\Debug\List\sha.i</file>
+      <file>$PROJ_DIR$\Debug\Obj\keccak.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtools.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\ge_operations.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ed25519.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Debug\List\stretchint.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\stretchint.pbi</file>
+      <file>$PROJ_DIR$\macros\module.h</file>
+      <file>$PROJ_DIR$\wolf25519\curve25519.c</file>
+      <file>$PROJ_DIR$\25519\ed25519.h</file>
+      <file>$PROJ_DIR$\25519\sha512.h</file>
+      <file>$PROJ_DIR$\25519\edsign.h</file>
+      <file>$PROJ_DIR$\25519\f25519.h</file>
+      <file>$PROJ_DIR$\25519\sha512.c</file>
+      <file>$PROJ_DIR$\helper\binary.c</file>
+      <file>$PROJ_DIR$\helper\memtools.h</file>
+      <file>$PROJ_DIR$\helper\memtools.c</file>
+      <file>$PROJ_DIR$\25519\c25519.c</file>
+      <file>$PROJ_DIR$\25519\edsign.c</file>
+      <file>$PROJ_DIR$\25519\fprime.h</file>
+      <file>$PROJ_DIR$\25519\morph25519.h</file>
+      <file>$PROJ_DIR$\25519\fprime.c</file>
+      <file>$PROJ_DIR$\25519\morph25519.c</file>
+      <file>$PROJ_DIR$\field\t0r_f25519.c</file>
+      <file>$PROJ_DIR$\macros\concat.h</file>
+      <file>$PROJ_DIR$\macros\min_max.h</file>
+      <file>$PROJ_DIR$\25519\ed25519.c</file>
+      <file>$PROJ_DIR$\25519\c25519.h</file>
+      <file>$PROJ_DIR$\25519\f25519.c</file>
+      <file>$PROJ_DIR$\wolf25519\hash.h</file>
+      <file>$PROJ_DIR$\wolf25519\logging.h</file>
+      <file>$PROJ_DIR$\wolf25519\misc.c</file>
+      <file>$PROJ_DIR$\wolf25519\error-crypt.h</file>
+      <file>$PROJ_DIR$\wolf25519\settings.h</file>
+      <file>$PROJ_DIR$\wolf25519\ge_operations.c</file>
+      <file>$PROJ_DIR$\wolf25519\sha256.h</file>
+      <file>$PROJ_DIR$\wolf25519\ed25519.h</file>
+      <file>$PROJ_DIR$\wolf25519\fe_operations.c</file>
+      <file>$PROJ_DIR$\wolf25519\random.h</file>
+      <file>$PROJ_DIR$\wolf25519\sha512.c</file>
+      <file>$PROJ_DIR$\wolf25519\sha512.h</file>
+      <file>$PROJ_DIR$\wolf25519\visibility.h</file>
+      <file>$PROJ_DIR$\wolf25519\ge_operations.h</file>
+      <file>$PROJ_DIR$\wolf25519\wc_port.h</file>
+      <file>$PROJ_DIR$\EC.c</file>
+      <file>$PROJ_DIR$\wolf25519\memory.h</file>
+      <file>$PROJ_DIR$\wolf25519\types.h</file>
+      <file>$PROJ_DIR$\wolf25519\fe_operations.h</file>
+      <file>$PROJ_DIR$\wolf25519\misc.h</file>
+      <file>$PROJ_DIR$\stretchint.h</file>
+      <file>$PROJ_DIR$\sponge.c</file>
+      <file>$PROJ_DIR$\stretchint.c</file>
+      <file>$PROJ_DIR$\keccak.h</file>
+      <file>$PROJ_DIR$\primes.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\fe_operations.pbi</file>
+      <file>$PROJ_DIR$\keccak.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\LFSR86540.c</file>
+      <file>$PROJ_DIR$\LFSR86540.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\littlemorelongint.h</file>
+      <file>$PROJ_DIR$\Debug\List\LFSR86540.lst</file>
+      <file>$PROJ_DIR$\EC.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\sponge.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\wolf25519\ecc_fp.c</name>
+      <name>$PROJ_DIR$\wolf25519\ed25519.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 90 17 212</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 172</file>
+          <file> 92</file>
         </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 234</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\dh.c</name>
-      <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 149 231 24</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 141</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 137</file>
+          <file> 71 12 10</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32 0 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 61 42 58 198 47 62 60 118 196 218</file>
+          <name>BICOMP</name>
+          <file> 122 58 20 124 135 118 131 145 14 11 83 125 129 132 54 121 120 130 136 127 134 87 63 23 59 72 137 7 93 29 37 91 57 73</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 218 130 20 34 221 187 206 32 42 216 95 60 54 46 165 100 220 47 58 0 118 61 5 105 195 147 237 241 150 91 126 198 62 196</file>
+          <name>ICCARM</name>
+          <file> 122 130 125 135 132 134 145 83 20 7 93 29 58 14 11 87 23 63 59 37 57 91 72 73 136 54 131 127 124 129 121 118 120 137</file>
         </tool>
       </inputs>
     </file>
@@ -322,564 +189,16 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 239</file>
+          <file> 39</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\sha512.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 93 192 117</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 250</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 230</file>
-        </tool>
-      </outputs>
+      <name>$PROJ_DIR$\Debug\Exe\c.out</name>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32 4 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 36 60 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 206 54 105 187 60 20 237 5 195 147 241 91 4 36 38 32 34 46 165 100 221 220 150 126 39 216 95 130</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\keccak.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 119 226 158</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 108</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 155</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 12 228 187 114 206 195 147 237 105 220 20 221 22 84 70 63 69 252 240 165 216 14</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 114 70 187 63 22 220 206 105 165 20 252 221 228 12 240 14 195 147 237 84 216 69</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 200 227 222</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 88</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 157</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 228 187 114 206 195 147 237 105 220 20 221 235 173 253 84 70 63 69 252 240 165 216 12 22 14 244 50 34 54 32 5 46 100 95 241 91 150 130 126 40 41 42 58 4</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 187 114 20 165 220 206 84 253 105 173 240 4 5 150 126 54 34 244 63 228 14 41 241 91 235 12 50 195 147 237 221 70 69 252 216 22 40 42 46 100 32 95 130 58</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\EC.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 138 188 142</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 238</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 154</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 28 15 228 187 114 206 195 147 237 105 220 20 221 84 70 63 240 165 216 118 196 218 69 252</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 195 221 114 240 206 15 69 196 187 228 70 165 118 245 20 84 63 220 105 216 28 147 237 218 252</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\stretchint.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 134 153 177</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 168</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 249</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 15 228 187 114 206 195 147 237 105 220 20 221 84 70 63 240 165 216 118 196 218</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 218 147 195 206 165 84 20 63 187 105 237 15 228 114 70 240 118 220 221 216 196</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\primes.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 106 211 186</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 189</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 107</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\sponge.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 262 215 207</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 185</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 254</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 22 228 187 114 206 195 147 237 105 220 20 221 84 70 63 69 252 240 165 216</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 69 206 114 228 70 165 187 220 105 252 20 84 63 240 195 147 237 221 216 22</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\LFSR86540.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 256 35 223</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 116</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 23</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 13 228 187 114 206 195 147 237 105 220 20 221 7</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 206 228 114 187 221 20 7 195 105 220 13 147 237</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\memory.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 143 246 87</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 255</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 204</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 46 20 187 206 195 147 237 105 220 221 34 5 165 216 100 95 241 91 150 130 126 60</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 220 206 221 5 187 60 32 34 216 150 126 46 20 105 195 147 237 54 165 100 241 91 95 130</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\misc.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 135 92 162</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 6</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 169</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 39 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 100 54 165 20 105 237 91 46 187 206 241 39 195 147 32 34 5 221 220 216 95 150 126 130</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 265 25 194</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 136</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 180</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ed25519.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 127 197 213</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 145</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 109</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 50 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 40 114 41 42 58 4 60 44 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 54 105 206 58 34 44 41 20 220 221 187 50 4 5 114 60 38 32 40 42 46 165 100 216 95 130 39 195 147 237 241 150 91 126</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\fe_low_mem.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 148 193 164</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 160</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 131</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\integer.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 152 99 258</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 140</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 182</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 61 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 42 58 198 47 62</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 206 46 220 221 187 32 198 54 165 100 34 216 95 130 20 62 61 42 47 5 105 195 147 237 241 150 91 126 58</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ge_low_mem.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 263 236 181</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 190</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 167</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\fe_operations.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 242 233 178</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 9</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 179</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 40 114 187 206 195 147 237 105 220 34 5 46 20 221 165 216 100 95 241 91 150 130 126 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 187 38 40 32 114 105 237 34 221 206 54 195 147 46 165 100 216 95 130 20 220 5 241 150 91 126 39</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\ge_operations.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 132 111 224</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 161</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 171</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 41 114 187 206 195 147 237 105 220 40 34 5 46 20 221 165 216 100 95 241 91 150 130 126 50 42 58 4 60 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 91 60 32 114 105 187 241 206 34 41 195 147 20 50 38 54 237 5 150 126 4 58 40 220 46 165 100 221 216 95 130 42 39</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\random.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 96 247 176</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 16</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 19</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 42 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 58 60 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58 32 20 105 237 150 126 34 60 187 206 42 38 5 195 147 241 91 54 46 165 100 221 220 216 95 130 39</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\sha256.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 264 257 201</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 112</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 98</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 58 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 36 60 38 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 206 54 5 195 147 187 60 20 105 237 241 91 58 36 38 32 34 46 165 100 221 220 216 150 126 39 95 130</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\logging.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 146 129 166</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 121</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 104</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32 36 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 60</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 237 105 206 20 241 34 187 91 60 32 5 195 147 36 54 46 165 100 221 220 216 150 126 95 130</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\wolf25519\compress.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 125 89 8</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 128</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 123</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
+          <name>ILINK</name>
+          <file> 52 26 67 10 80 22 86 18 17 4 82 62 9 79 43 89 25 28</file>
         </tool>
       </inputs>
     </file>
@@ -887,26 +206,22 @@
       <name>$PROJ_DIR$\wolf25519\curve25519.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 205 120 139</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 110</file>
+          <file> 64</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 113</file>
+          <name>ICCARM</name>
+          <file> 19 68 66</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
+          <name>BICOMP</name>
+          <file> 122 130</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
+          <name>ICCARM</name>
+          <file> 122 130</file>
         </tool>
       </inputs>
     </file>
@@ -914,26 +229,45 @@
       <name>$PROJ_DIR$\helper\binary.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 210 208 229</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 219</file>
+          <file> 21</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 27</file>
+          <name>ICCARM</name>
+          <file> 5 15 26</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 252 228 187 114 206 195 147 237 105 220 20 221</file>
+          <name>BICOMP</name>
+          <file> 20 54 83 93 145 45 36 7 58 29 14 11</file>
         </tool>
         <tool>
+          <name>ICCARM</name>
+          <file> 45 36 83 54 20 7 93 29 58 14 145 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\helper\memtools.c</name>
+      <outputs>
+        <tool>
           <name>BICOMP</name>
-          <file> 206 114 187 147 20 252 228 195 105 237 220 221</file>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 56 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 113 96 14 145 83 20 87 58 11 36 54 114 35 93 29 23 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104 36 83 54 20 7 93 29 58 14 145 11 113 114 96 35 87 23</file>
         </tool>
       </inputs>
     </file>
@@ -941,142 +275,241 @@
       <name>$PROJ_DIR$\field\t0r_f25519.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 214 259 251</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 225</file>
+          <file> 3</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 151</file>
+          <name>ICCARM</name>
+          <file> 13 44 47</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\helper\memtools.c</name>
+      <name>$PROJ_DIR$\wolf25519\ge_operations.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 103 97 217</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 144</file>
+          <file> 90</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 183</file>
+          <name>ICCARM</name>
+          <file> 76 65 22</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 83 228 187 114 206 195 147 237 105 220 20 221 84 70 63 240 165 216</file>
+          <name>BICOMP</name>
+          <file> 57 121 130 54 58 83 37 20 135 131 7 93 145 125 120 122 29 132 91 73 129 124 136 14 134 87 63 11 23 59 72 127 137</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 195 84 63 220 20 187 206 165 105 221 228 114 70 240 147 237 216 83</file>
+          <name>ICCARM</name>
+          <file> 122 130 131 54 83 20 7 93 29 58 14 136 135 132 134 145 11 87 23 63 59 37 57 91 72 73 125 127 124 129 121 120 137</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\dsa.c</name>
+      <name>$PROJ_DIR$\wolf25519\fe_operations.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 102 248 94</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 174</file>
+          <file> 143</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 261</file>
+          <name>ICCARM</name>
+          <file> 31 27 80</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32 42 34 5 46 20 187 206 195 147 237 105 220 221 165 216 100 95 241 91 150 130 126 58 61 198 47 62 60 36 55 159</file>
+          <name>BICOMP</name>
+          <file> 83 120 136 130 54 58 29 135 11 20 122 7 93 134 87 63 23 59 72 145 14 132 37 91 57 73 137</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 187 46 105 206 34 36 54 165 100 20 237 150 126 61 159 195 147 241 91 198 42 60 55 32 58 5 221 220 216 95 130 47 62</file>
+          <name>ICCARM</name>
+          <file> 122 130 136 54 83 20 7 93 29 58 14 135 132 134 145 11 87 23 63 59 37 57 91 72 73 120 137</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\ecc.c</name>
+      <name>$PROJ_DIR$\wolf25519\sha512.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 115 122 209</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 184</file>
+          <file> 46</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 124</file>
+          <name>ICCARM</name>
+          <file> 55 77 62</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
+          <name>BICOMP</name>
+          <file> 20 122 58 83 121 145 29 132 7 93 37 57 129 119 120 130 135 134 87 63 11 14 91 73 137 23 59 72</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
+          <name>ICCARM</name>
+          <file> 122 130 129 135 132 134 145 83 20 7 93 29 58 14 11 87 23 63 59 37 57 91 72 73 119 121 120 137</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\wolf25519\poly1305.c</name>
+      <name>$PROJ_DIR$\EC.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 191 133 156</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 199</file>
+          <file> 30</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 33</file>
+          <name>ICCARM</name>
+          <file> 75 84 67</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 54 32</file>
+          <name>BICOMP</name>
+          <file> 7 11 54 35 20 138 103 16 83 36 114 87 70 32 145 113 96 14 58 23 151 93 29 24 45</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 54 32</file>
+          <name>ICCARM</name>
+          <file> 151 138 36 83 54 20 7 93 29 58 14 145 11 113 114 96 35 87 23 70 16 24 103 45</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+      <name>$PROJ_DIR$\sponge.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48 2 9</file>
+        </tool>
+      </outputs>
       <inputs>
         <tool>
-          <name>ILINK</name>
-          <file> 101 229 8 139 24 142 212 213 164 178 181 224 258 158 223 166 222 87 217 162 186 176 194 201 117 207 177 251 260 163 203 232</file>
+          <name>BICOMP</name>
+          <file> 103 20 54 36 114 87 83 14 58 45 145 113 96 35 7 93 29 11 23 153</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153 36 83 54 20 7 93 29 58 14 145 11 113 114 96 103 45 35 87 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\stretchint.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 94 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 93 7 20 87 113 145 96 83 58 29 138 36 54 114 35 70 14 11 23 16</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138 36 83 54 20 7 93 29 58 14 145 11 113 114 96 35 87 23 70 16 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\primes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51 6 82</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\keccak.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69 40 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 114 83 96 153 14 20 58 87 145 45 11 36 141 35 149 7 93 29 113 23 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141 36 83 54 20 7 93 29 58 14 145 11 153 113 114 96 103 45 35 87 23 149</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LFSR86540.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42 150 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 36 54 83 11 145 148 7 58 14 147 93 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147 36 83 54 20 7 93 29 58 14 145 11 148</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8 41 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83 54 145 87 14 20 113 49 58 78 35 129 132 91 73 122 135 38 96 36 149 131 37 57 34 141 125 7 93 29 11 114 103 45 23 153 136 127 134 63 130 59 72 124</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36 83 54 20 7 93 29 58 14 145 11 34 78 49 113 114 96 103 45 35 87 23 141 153 149 38 125 135 122 130 132 134 63 59 37 57 91 72 73 136 131 127 124 129</file>
         </tool>
       </inputs>
     </file>
     <forcedrebuild>
-      <name>$PROJ_DIR$\25519\ed25519.c</name>
-      <tool>ICCARM</tool>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\25519\f25519.c</name>
+      <name>$PROJ_DIR$\25519\sha512.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
@@ -1088,24 +521,24 @@
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\25519\morph25519.c</name>
-      <tool>ICCARM</tool>
-    </forcedrebuild>
-    <forcedrebuild>
       <name>$PROJ_DIR$\25519\fprime.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\25519\sha512.c</name>
+      <name>$PROJ_DIR$\25519\morph25519.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\wolf25519\dsa.c</name>
+      <name>$PROJ_DIR$\field\t0r_f25519.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>[MULTI_TOOL]</name>
-      <tool>ILINK</tool>
+      <name>$PROJ_DIR$\25519\ed25519.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\25519\f25519.c</name>
+      <tool>ICCARM</tool>
     </forcedrebuild>
   </configuration>
   <configuration>

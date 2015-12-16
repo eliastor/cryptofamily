@@ -21,10 +21,6 @@
 
  /* Based On Daniel J Bernstein's curve25519 Public Domain ref10 work. */
 
-#ifdef HAVE_CONFIG_H
-    #include "config.h"
-#endif
-
 #include "settings.h"
 
 #ifndef CURVED25519_SMALL /* run when not defined to use small memory math */

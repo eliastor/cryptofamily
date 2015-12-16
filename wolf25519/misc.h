@@ -28,11 +28,6 @@
 #include "types.h"
 
 
-#ifdef __cplusplus
-    extern "C" {
-#endif
-
-
 #ifdef NO_INLINE
 WOLFSSL_LOCAL
 word32 rotlFixed(word32, word32);
@@ -68,11 +63,6 @@ void   ByteReverseWords64(word64*, const word64*, word32);
 #endif /* WORD64_AVAILABLE */
 
 #endif /* NO_INLINE */
-
-
-#ifdef __cplusplus
-    }   /* extern "C" */
-#endif
 
 
 #endif /* WOLF_CRYPT_MISC_H */
